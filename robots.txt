@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://docs.sparklines-backend.samay15jan.xyz/sitemap.xml.gz

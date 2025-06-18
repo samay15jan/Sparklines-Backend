@@ -1,0 +1,3391 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.10.1.803525665172">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 3.10.1">
+
+    <!-- Primary Meta Tags -->
+    <title>Artist Details</title>
+    <meta name="title" content="Artist Details">
+    <meta name="description" content="HTTP">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://docs.sparklines-backend.samay15jan.xyz/details/artists/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://docs.sparklines-backend.samay15jan.xyz/details/artists/">
+    <meta property="og:title" content="Artist Details">
+    <meta property="og:description" content="HTTP">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://docs.sparklines-backend.samay15jan.xyz/details/artists/">
+    <meta property="twitter:title" content="Artist Details">
+    <meta property="twitter:description" content="HTTP">
+
+    <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
+
+    <link href="../../resources/css/retype.css?v=3.10.1.803525665172" rel="stylesheet">
+
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.10.1.803525665172" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.10.1" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.10.1.803525665172" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.10.1.803525665172" defer></script>
+</head>
+<body>
+    <div id="retype-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
+        <div class="absolute bottom-0 left-0 dark:bg-dark-800" style="top: 5rem; right: 50%"></div>
+    
+        <header id="retype-header" class="sticky top-0 z-30 flex w-full h-16 bg-white border-b border-gray-200 md:h-20 dark:bg-dark-850 dark:border-dark-650">
+            <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
+                <!-- Mobile menu button skeleton -->
+                <button v-cloak class="skeleton retype-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="retype-sidebar-left-toggle-button"></div>
+        
+                <!-- Logo -->
+                <div class="flex items-center justify-between h-full py-2 md:w-75">
+                    <div class="flex items-center px-2 md:px-6">
+                        <a id="retype-branding-logo" href="../../" class="flex items-center leading-snug text-2xl">
+                            <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Sparklines</span>
+                        </a><span id="retype-branding-label" class="hidden mt-1 px-2 py-1 ml-4 text-xs font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-md md:inline-block">Docs</span>
+                    </div>
+        
+                    <span class="hidden h-8 border-r md:inline-block dark:border-dark-650"></span>
+                </div>
+        
+                <div class="flex justify-between md:grow">
+                    <!-- Top Nav -->
+                    <nav id="retype-header-nav" class="hidden md:flex">
+                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://docs.sparklines-backend.samay15jan.xyz">API</a>
+                            </li>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://github.com/samay15jan/sparklines">Github</a>
+                            </li>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://samay15jan.xyz">Author</a>
+                            </li>
+        
+                        </ul>
+                    </nav>
+        
+                    <!-- Header Right Skeleton -->
+                    <div v-cloak class="flex justify-end grow skeleton">
+        
+                        <!-- Search input mock -->
+                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            </div>
+                            <input class="w-full h-10 placeholder-gray-400 transition-colors duration-200 ease-in bg-gray-200 border border-transparent rounded md:text-sm hover:bg-white hover:border-gray-300 focus:outline-none focus:bg-white focus:border-gray-500 dark:bg-dark-600 dark:border-dark-600 dark:placeholder-dark-400" style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search">
+                        </div>
+        
+                        <!-- Mobile search button -->
+                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                        </div>
+        
+                        <!-- Dark mode switch placeholder -->
+                        <div class="w-10 h-10 lg:ml-2"></div>
+        
+                        <!-- History button -->
+                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                        </div>
+                    </div>
+        
+                    <div v-cloak class="flex justify-end grow">
+                        <div id="retype-mobile-search-button"></div>
+                        <doc-search-desktop></doc-search-desktop>
+        
+                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                        <doc-history></doc-history>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <div id="retype-container" class="container relative flex bg-white">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-white border-gray-200 sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton dark:bg-dark-800 dark:border-dark-650">
+            
+                <div class="flex items-center h-16 px-6">
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-white border border-gray-200 rounded shadow-none text-sm focus:outline-none focus:border-gray-600 dark:bg-dark-600 dark:border-dark-600" type="text" placeholder="Filter">
+                </div>
+            
+                <div class="pl-6 mt-1 mb-4">
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-32 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-48 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                    <div class="w-40 h-3 mb-4 bg-gray-200 rounded-full loading dark:bg-dark-600"></div>
+                </div>
+            
+                <div class="shrink-0 mt-auto bg-transparent dark:border-dark-650">
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-dark-650">
+            
+                        <div class="py-3 px-6 md:hidden border-b dark:border-dark-650">
+                            <nav>
+                                <ul class="flex flex-wrap justify-center items-center">
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://docs.sparklines-backend.samay15jan.xyz">API</a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://github.com/samay15jan/sparklines">Github</a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-blue-500 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200" href="https://samay15jan.xyz">Author</a>
+                                    </li>
+            
+                                </ul>
+                            </nav>
+                        </div>
+            
+                        <a class="flex items-center justify-center flex-nowrap h-16 text-gray-400 dark:text-dark-400 hover:text-gray-700 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                            <span class="text-xs whitespace-nowrap">Powered by</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                        </a>
+                    </div>
+                </template>
+            </doc-sidebar>
+    
+            <div class="grow min-w-0 dark:bg-dark-850">
+                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+                <div class="flex">
+                    <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
+                        <main class="relative pb-12 lg:pt-2">
+                            <div class="retype-markdown" id="retype-content">
+                                <!-- Rendered if sidebar right is enabled -->
+                                <div id="retype-sidebar-right-toggle"></div>
+                                <!-- Page content  -->
+<doc-anchor-target id="artist-details" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#artist-details">#</doc-anchor-trigger>
+        <span>Artist Details</span>
+    </h1>
+</doc-anchor-target>
+<doc-anchor-target id="artist-details-by-link">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#artist-details-by-link">#</doc-anchor-trigger>
+        <span>Artist details by link</span>
+    </h2>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab v-cloak id="request">
+<template #title>Request</template>
+<p>HTTP</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">https://sparklines-backend.samay15jan.xyz/artists?link=https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_</code></pre>
+</doc-codeblock></div>
+<p>CURL</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">curl -X GET 'https://sparklines-backend.samay15jan.xyz/artists?link=https://www.jiosaavn.com/song/thunderclouds/RT8zcBh9eUc' \
+ -H 'content-type: application/json'</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab v-cloak id="response">
+<template #title>Response</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-json"><code v-pre class="language-json">{
+  &quot;status&quot;: &quot;SUCCESS&quot;,
+  &quot;message&quot;: null,
+  &quot;data&quot;: {
+    &quot;id&quot;: &quot;568707&quot;,
+    &quot;name&quot;: &quot;Sia&quot;,
+    &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+    &quot;image&quot;: [
+      {
+        &quot;quality&quot;: &quot;50x50&quot;,
+        &quot;link&quot;: &quot;https://c.saavncdn.com/artists/Sia_002_20200921152829_50x50.jpg&quot;
+      },
+      {
+        &quot;quality&quot;: &quot;150x150&quot;,
+        &quot;link&quot;: &quot;https://c.saavncdn.com/artists/Sia_002_20200921152829_150x150.jpg&quot;
+      },
+      {
+        &quot;quality&quot;: &quot;500x500&quot;,
+        &quot;link&quot;: &quot;https://c.saavncdn.com/artists/Sia_002_20200921152829_500x500.jpg&quot;
+      }
+    ],
+    &quot;followerCount&quot;: &quot;71752&quot;,
+    &quot;fanCount&quot;: &quot;963569&quot;,
+    &quot;isVerified&quot;: false,
+    &quot;dominantLanguage&quot;: &quot;english&quot;,
+    &quot;dominantType&quot;: &quot;singer&quot;,
+    &quot;bio&quot;: [],
+    &quot;dob&quot;: &quot;&quot;,
+    &quot;fb&quot;: &quot;&quot;,
+    &quot;twitter&quot;: &quot;&quot;,
+    &quot;wiki&quot;: &quot;https://en.wikipedia.org/wiki/Sia_Furler&quot;,
+    &quot;availableLanguages&quot;: [
+      &quot;english&quot;,
+      &quot;unknown&quot;,
+      &quot;spanish&quot;,
+      &quot;italian&quot;,
+      &quot;french&quot;,
+      &quot;portuguese&quot;,
+      &quot;german&quot;,
+      &quot;indonesian&quot;,
+      &quot;chinese&quot;,
+      &quot;finnish&quot;
+    ],
+    &quot;isRadioPresent&quot;: true
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Query Paramter</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-white dark:text-dark-850 bg-gray-900 dark:bg-white h-6 px-2 text-xs rounded-md">
+    <span>link</span>
+</span></td>
+<td>Song link from <a href="https://jiosaavn.com">https://jiosaavn.com</a></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>True</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="artist-details-by-artist-id">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#artist-details-by-artist-id">#</doc-anchor-trigger>
+        <span>Artist details by artist ID</span>
+    </h2>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab v-cloak id="request">
+<template #title>Request</template>
+<p>HTTP</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">https://sparklines-backend.samay15jan.xyz/artists?id=568707</code></pre>
+</doc-codeblock></div>
+<p>CURL</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">curl -X GET 'https://sparklines-backend.samay15jan.xyz/artists?id=568707' \
+ -H 'content-type: application/json'</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab v-cloak id="response">
+<template #title>Response</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-json"><code v-pre class="language-json">{
+  &quot;status&quot;: &quot;SUCCESS&quot;,
+  &quot;message&quot;: null,
+  &quot;data&quot;: {
+    &quot;id&quot;: &quot;568707&quot;,
+    &quot;name&quot;: &quot;Sia&quot;,
+    &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+    &quot;image&quot;: [
+      {
+        &quot;quality&quot;: &quot;50x50&quot;,
+        &quot;link&quot;: &quot;https://c.saavncdn.com/artists/Sia_002_20200921152829_50x50.jpg&quot;
+      },
+      {
+        &quot;quality&quot;: &quot;150x150&quot;,
+        &quot;link&quot;: &quot;https://c.saavncdn.com/artists/Sia_002_20200921152829_150x150.jpg&quot;
+      },
+      {
+        &quot;quality&quot;: &quot;500x500&quot;,
+        &quot;link&quot;: &quot;https://c.saavncdn.com/artists/Sia_002_20200921152829_500x500.jpg&quot;
+      }
+    ],
+    &quot;followerCount&quot;: &quot;71752&quot;,
+    &quot;fanCount&quot;: &quot;963569&quot;,
+    &quot;isVerified&quot;: false,
+    &quot;dominantLanguage&quot;: &quot;english&quot;,
+    &quot;dominantType&quot;: &quot;singer&quot;,
+    &quot;bio&quot;: [],
+    &quot;dob&quot;: &quot;&quot;,
+    &quot;fb&quot;: &quot;&quot;,
+    &quot;twitter&quot;: &quot;&quot;,
+    &quot;wiki&quot;: &quot;https://en.wikipedia.org/wiki/Sia_Furler&quot;,
+    &quot;availableLanguages&quot;: [
+      &quot;english&quot;,
+      &quot;unknown&quot;,
+      &quot;spanish&quot;,
+      &quot;italian&quot;,
+      &quot;french&quot;,
+      &quot;portuguese&quot;,
+      &quot;german&quot;,
+      &quot;indonesian&quot;,
+      &quot;chinese&quot;,
+      &quot;finnish&quot;
+    ],
+    &quot;isRadioPresent&quot;: true
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Paramter</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-white dark:text-dark-850 bg-gray-900 dark:bg-white h-6 px-2 text-xs rounded-md">
+    <span>id</span>
+</span></td>
+<td>Artist ID</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>True</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="artist-songs-by-artist-id">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#artist-songs-by-artist-id">#</doc-anchor-trigger>
+        <span>Artist Songs by artist ID</span>
+    </h2>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab v-cloak id="request">
+<template #title>Request</template>
+<p>HTTP</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">https://sparklines-backend.samay15jan.xyz/artists/568707/songs?page=1</code></pre>
+</doc-codeblock></div>
+<p>CURL</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">curl -X GET 'https://sparklines-backend.samay15jan.xyz/artists/568707/songs?page=1' \
+ -H 'content-type: application/json'</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab v-cloak id="response">
+<template #title>Response</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-json"><code v-pre class="language-json">{
+  &quot;status&quot;: &quot;SUCCESS&quot;,
+  &quot;message&quot;: null,
+  &quot;data&quot;: {
+    &quot;total&quot;: 980,
+    &quot;lastPage&quot;: false,
+    &quot;results&quot;: [
+      {
+        &quot;id&quot;: &quot;t5e4VTsk&quot;,
+        &quot;name&quot;: &quot;Unstoppable&quot;,
+        &quot;album&quot;: {
+          &quot;id&quot;: &quot;1759517&quot;,
+          &quot;name&quot;: &quot;Unstoppable&quot;,
+          &quot;url&quot;: &quot;https://www.jiosaavn.com/album/unstoppable/1Tm2aGl16CM_&quot;
+        },
+        &quot;year&quot;: &quot;2016&quot;,
+        &quot;releaseDate&quot;: null,
+        &quot;duration&quot;: &quot;218&quot;,
+        &quot;label&quot;: &quot;Monkey Puzzle Records/RCA Records&quot;,
+        &quot;primaryArtists&quot;: &quot;Sia&quot;,
+        &quot;primaryArtistsId&quot;: &quot;568707&quot;,
+        &quot;featuredArtists&quot;: &quot;&quot;,
+        &quot;featuredArtistsId&quot;: &quot;&quot;,
+        &quot;explicitContent&quot;: 0,
+        &quot;playCount&quot;: null,
+        &quot;language&quot;: &quot;english&quot;,
+        &quot;hasLyrics&quot;: &quot;false&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/song/unstoppable/BF0OBSJkRFg&quot;,
+        &quot;copyright&quot;: &quot;(P) 2015 Monkey Puzzle Records, under exclusive license to RCA Records&quot;,
+        &quot;image&quot;: [
+          {
+            &quot;quality&quot;: &quot;50x50&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/552/Unstoppable-English-2016-50x50.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;150x150&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/552/Unstoppable-English-2016-150x150.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;500x500&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/552/Unstoppable-English-2016-500x500.jpg&quot;
+          }
+        ],
+        &quot;downloadUrl&quot;: [
+          {
+            &quot;quality&quot;: &quot;12kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/552/26b33054461788c6282e4ac814d3769f_12.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;48kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/552/26b33054461788c6282e4ac814d3769f_48.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;96kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/552/26b33054461788c6282e4ac814d3769f_96.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;160kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/552/26b33054461788c6282e4ac814d3769f_160.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;320kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/552/26b33054461788c6282e4ac814d3769f_320.mp4&quot;
+          }
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;4RmwbCw4&quot;,
+        &quot;name&quot;: &quot;Cheap Thrills&quot;,
+        &quot;album&quot;: {
+          &quot;id&quot;: &quot;1744101&quot;,
+          &quot;name&quot;: &quot;Cheap Thrills&quot;,
+          &quot;url&quot;: &quot;https://www.jiosaavn.com/album/cheap-thrills/d-w-VzXfYCU_&quot;
+        },
+        &quot;year&quot;: &quot;2015&quot;,
+        &quot;releaseDate&quot;: null,
+        &quot;duration&quot;: &quot;210&quot;,
+        &quot;label&quot;: &quot;Monkey Puzzle Records/RCA Records&quot;,
+        &quot;primaryArtists&quot;: &quot;Sia&quot;,
+        &quot;primaryArtistsId&quot;: &quot;568707&quot;,
+        &quot;featuredArtists&quot;: &quot;&quot;,
+        &quot;featuredArtistsId&quot;: &quot;&quot;,
+        &quot;explicitContent&quot;: 0,
+        &quot;playCount&quot;: null,
+        &quot;language&quot;: &quot;english&quot;,
+        &quot;hasLyrics&quot;: &quot;false&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/song/cheap-thrills/RDoGRhZzQAc&quot;,
+        &quot;copyright&quot;: &quot;(P) 2015 Monkey Puzzle Records, under exclusive license to RCA Records&quot;,
+        &quot;image&quot;: [
+          {
+            &quot;quality&quot;: &quot;50x50&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/722/Cheap-Thrills-English-2015-50x50.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;150x150&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/722/Cheap-Thrills-English-2015-150x150.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;500x500&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/722/Cheap-Thrills-English-2015-500x500.jpg&quot;
+          }
+        ],
+        &quot;downloadUrl&quot;: [
+          {
+            &quot;quality&quot;: &quot;12kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/722/7f3218eb23ec7273f73d5317e5083d7e_12.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;48kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/722/7f3218eb23ec7273f73d5317e5083d7e_48.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;96kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/722/7f3218eb23ec7273f73d5317e5083d7e_96.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;160kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/722/7f3218eb23ec7273f73d5317e5083d7e_160.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;320kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/722/7f3218eb23ec7273f73d5317e5083d7e_320.mp4&quot;
+          }
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;vU96z8LR&quot;,
+        &quot;name&quot;: &quot;Floating Through Space&quot;,
+        &quot;album&quot;: {
+          &quot;id&quot;: &quot;25126009&quot;,
+          &quot;name&quot;: &quot;Floating Through Space&quot;,
+          &quot;url&quot;: &quot;https://www.jiosaavn.com/album/floating-through-space/tJ88-kjlNk8_&quot;
+        },
+        &quot;year&quot;: &quot;2021&quot;,
+        &quot;releaseDate&quot;: null,
+        &quot;duration&quot;: &quot;177&quot;,
+        &quot;label&quot;: &quot;Monkey Puzzle/Atlantic&quot;,
+        &quot;primaryArtists&quot;: &quot;Sia, David Guetta&quot;,
+        &quot;primaryArtistsId&quot;: &quot;568707, 568665&quot;,
+        &quot;featuredArtists&quot;: &quot;&quot;,
+        &quot;featuredArtistsId&quot;: &quot;&quot;,
+        &quot;explicitContent&quot;: 0,
+        &quot;playCount&quot;: null,
+        &quot;language&quot;: &quot;english&quot;,
+        &quot;hasLyrics&quot;: &quot;false&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/song/floating-through-space/Bj1SBw4Ie2E&quot;,
+        &quot;copyright&quot;: &quot;under exclusive license to Atlantic Recording Corporation for the United States and WEA International for the world outside of the United States., ℗ 2021 Monkey Puzzle Music, Inc.&quot;,
+        &quot;image&quot;: [
+          {
+            &quot;quality&quot;: &quot;50x50&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/504/Floating-Through-Space-English-2021-20210203054031-50x50.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;150x150&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/504/Floating-Through-Space-English-2021-20210203054031-150x150.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;500x500&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/504/Floating-Through-Space-English-2021-20210203054031-500x500.jpg&quot;
+          }
+        ],
+        &quot;downloadUrl&quot;: [
+          {
+            &quot;quality&quot;: &quot;12kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/504/52e5c9b578f86252bc60b36d0f25536f_12.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;48kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/504/52e5c9b578f86252bc60b36d0f25536f_48.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;96kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/504/52e5c9b578f86252bc60b36d0f25536f_96.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;160kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/504/52e5c9b578f86252bc60b36d0f25536f_160.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;320kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/504/52e5c9b578f86252bc60b36d0f25536f_320.mp4&quot;
+          }
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;qnFPUVVn&quot;,
+        &quot;name&quot;: &quot;Never Give Up&quot;,
+        &quot;album&quot;: {
+          &quot;id&quot;: &quot;3031864&quot;,
+          &quot;name&quot;: &quot;Never Give Up (From &amp;quot;Lion&amp;quot; Soundtrack)&quot;,
+          &quot;url&quot;: &quot;https://www.jiosaavn.com/album/never-give-up-from-lion-soundtrack/Ls,mAR4z-D4_&quot;
+        },
+        &quot;year&quot;: &quot;2016&quot;,
+        &quot;releaseDate&quot;: null,
+        &quot;duration&quot;: &quot;222&quot;,
+        &quot;label&quot;: &quot;Masterworks&quot;,
+        &quot;primaryArtists&quot;: &quot;Sia&quot;,
+        &quot;primaryArtistsId&quot;: &quot;568707&quot;,
+        &quot;featuredArtists&quot;: &quot;&quot;,
+        &quot;featuredArtistsId&quot;: &quot;&quot;,
+        &quot;explicitContent&quot;: 0,
+        &quot;playCount&quot;: null,
+        &quot;language&quot;: &quot;english&quot;,
+        &quot;hasLyrics&quot;: &quot;false&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/song/never-give-up/AQYtYSFmYV0&quot;,
+        &quot;copyright&quot;: &quot;(P) 2016 Monkey Puzzle Records Inc.&quot;,
+        &quot;image&quot;: [
+          {
+            &quot;quality&quot;: &quot;50x50&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/659/Never-Give-Up-From-Lion-Soundtrack-English-2016-50x50.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;150x150&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/659/Never-Give-Up-From-Lion-Soundtrack-English-2016-150x150.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;500x500&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/659/Never-Give-Up-From-Lion-Soundtrack-English-2016-500x500.jpg&quot;
+          }
+        ],
+        &quot;downloadUrl&quot;: [
+          {
+            &quot;quality&quot;: &quot;12kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/659/490c1c31394d96c9b1c2fd7ace8f54d1_12.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;48kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/659/490c1c31394d96c9b1c2fd7ace8f54d1_48.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;96kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/659/490c1c31394d96c9b1c2fd7ace8f54d1_96.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;160kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/659/490c1c31394d96c9b1c2fd7ace8f54d1_160.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;320kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/659/490c1c31394d96c9b1c2fd7ace8f54d1_320.mp4&quot;
+          }
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;n2PC-t5G&quot;,
+        &quot;name&quot;: &quot;Snowman&quot;,
+        &quot;album&quot;: {
+          &quot;id&quot;: &quot;16226559&quot;,
+          &quot;name&quot;: &quot;Snowman&quot;,
+          &quot;url&quot;: &quot;https://www.jiosaavn.com/album/snowman/Hv8ASgjBPA4_&quot;
+        },
+        &quot;year&quot;: &quot;2017&quot;,
+        &quot;releaseDate&quot;: null,
+        &quot;duration&quot;: &quot;165&quot;,
+        &quot;label&quot;: &quot;Monkey Puzzle/Atlantic&quot;,
+        &quot;primaryArtists&quot;: &quot;Sia&quot;,
+        &quot;primaryArtistsId&quot;: &quot;568707&quot;,
+        &quot;featuredArtists&quot;: &quot;&quot;,
+        &quot;featuredArtistsId&quot;: &quot;&quot;,
+        &quot;explicitContent&quot;: 0,
+        &quot;playCount&quot;: null,
+        &quot;language&quot;: &quot;english&quot;,
+        &quot;hasLyrics&quot;: &quot;false&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/song/snowman/Hlo7cllEAnQ&quot;,
+        &quot;copyright&quot;: &quot;℗ 2017 Monkey Puzzle Music, Inc., under exclusive license to Atlantic Recording Corporation for the United States and WEA International for the world outside of the United States.&quot;,
+        &quot;image&quot;: [
+          {
+            &quot;quality&quot;: &quot;50x50&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/912/Snowman-English-2017-20221102174604-50x50.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;150x150&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/912/Snowman-English-2017-20221102174604-150x150.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;500x500&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/912/Snowman-English-2017-20221102174604-500x500.jpg&quot;
+          }
+        ],
+        &quot;downloadUrl&quot;: [
+          {
+            &quot;quality&quot;: &quot;12kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/912/579a097a2ab366f62eec9c374de9cf8f_12.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;48kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/912/579a097a2ab366f62eec9c374de9cf8f_48.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;96kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/912/579a097a2ab366f62eec9c374de9cf8f_96.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;160kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/912/579a097a2ab366f62eec9c374de9cf8f_160.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;320kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/912/579a097a2ab366f62eec9c374de9cf8f_320.mp4&quot;
+          }
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;WrPt4dDP&quot;,
+        &quot;name&quot;: &quot;Cheap Thrills&quot;,
+        &quot;album&quot;: {
+          &quot;id&quot;: &quot;1839881&quot;,
+          &quot;name&quot;: &quot;Cheap Thrills&quot;,
+          &quot;url&quot;: &quot;https://www.jiosaavn.com/album/cheap-thrills/wjWyr9dmbek_&quot;
+        },
+        &quot;year&quot;: &quot;2016&quot;,
+        &quot;releaseDate&quot;: null,
+        &quot;duration&quot;: &quot;224&quot;,
+        &quot;label&quot;: &quot;Monkey Puzzle Records/RCA Records&quot;,
+        &quot;primaryArtists&quot;: &quot;Sia&quot;,
+        &quot;primaryArtistsId&quot;: &quot;568707&quot;,
+        &quot;featuredArtists&quot;: &quot;Sean Paul&quot;,
+        &quot;featuredArtistsId&quot;: &quot;468845&quot;,
+        &quot;explicitContent&quot;: 0,
+        &quot;playCount&quot;: null,
+        &quot;language&quot;: &quot;english&quot;,
+        &quot;hasLyrics&quot;: &quot;false&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/song/cheap-thrills/Jxo7RUBUc2M&quot;,
+        &quot;copyright&quot;: &quot;(P) 2015 Monkey Puzzle Records, under exclusive license to RCA Records&quot;,
+        &quot;image&quot;: [
+          {
+            &quot;quality&quot;: &quot;50x50&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/930/Cheap-Thrills-English-2016-50x50.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;150x150&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/930/Cheap-Thrills-English-2016-150x150.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;500x500&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/930/Cheap-Thrills-English-2016-500x500.jpg&quot;
+          }
+        ],
+        &quot;downloadUrl&quot;: [
+          {
+            &quot;quality&quot;: &quot;12kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/930/76d580d9905867aff1c363cbdb033abe_12.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;48kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/930/76d580d9905867aff1c363cbdb033abe_48.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;96kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/930/76d580d9905867aff1c363cbdb033abe_96.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;160kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/930/76d580d9905867aff1c363cbdb033abe_160.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;320kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/930/76d580d9905867aff1c363cbdb033abe_320.mp4&quot;
+          }
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;m5dBCY1k&quot;,
+        &quot;name&quot;: &quot;Chandelier&quot;,
+        &quot;album&quot;: {
+          &quot;id&quot;: &quot;1152146&quot;,
+          &quot;name&quot;: &quot;Chandelier&quot;,
+          &quot;url&quot;: &quot;https://www.jiosaavn.com/album/chandelier/UiL9E3H6XDc_&quot;
+        },
+        &quot;year&quot;: &quot;2014&quot;,
+        &quot;releaseDate&quot;: null,
+        &quot;duration&quot;: &quot;216&quot;,
+        &quot;label&quot;: &quot;Monkey Puzzle Records&quot;,
+        &quot;primaryArtists&quot;: &quot;Sia&quot;,
+        &quot;primaryArtistsId&quot;: &quot;568707&quot;,
+        &quot;featuredArtists&quot;: &quot;&quot;,
+        &quot;featuredArtistsId&quot;: &quot;&quot;,
+        &quot;explicitContent&quot;: 0,
+        &quot;playCount&quot;: null,
+        &quot;language&quot;: &quot;english&quot;,
+        &quot;hasLyrics&quot;: &quot;false&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/song/chandelier/HV0PczdpBlg&quot;,
+        &quot;copyright&quot;: &quot;(P) 2014 Monkey Puzzle Records, under exclusive license to RCA Records&quot;,
+        &quot;image&quot;: [
+          {
+            &quot;quality&quot;: &quot;50x50&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/952/Chandelier-2014-50x50.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;150x150&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/952/Chandelier-2014-150x150.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;500x500&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/952/Chandelier-2014-500x500.jpg&quot;
+          }
+        ],
+        &quot;downloadUrl&quot;: [
+          {
+            &quot;quality&quot;: &quot;12kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/952/7b60337183c7d47ead728f94ebb113cb_12.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;48kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/952/7b60337183c7d47ead728f94ebb113cb_48.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;96kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/952/7b60337183c7d47ead728f94ebb113cb_96.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;160kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/952/7b60337183c7d47ead728f94ebb113cb_160.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;320kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/952/7b60337183c7d47ead728f94ebb113cb_320.mp4&quot;
+          }
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;_lX2W2a_&quot;,
+        &quot;name&quot;: &quot;Let's Love&quot;,
+        &quot;album&quot;: {
+          &quot;id&quot;: &quot;22338976&quot;,
+          &quot;name&quot;: &quot;Let's Love&quot;,
+          &quot;url&quot;: &quot;https://www.jiosaavn.com/album/lets-love/NrF9-Vkuiu4_&quot;
+        },
+        &quot;year&quot;: &quot;2020&quot;,
+        &quot;releaseDate&quot;: null,
+        &quot;duration&quot;: &quot;200&quot;,
+        &quot;label&quot;: &quot;Parlophone (France)&quot;,
+        &quot;primaryArtists&quot;: &quot;David Guetta, Sia&quot;,
+        &quot;primaryArtistsId&quot;: &quot;568665, 568707&quot;,
+        &quot;featuredArtists&quot;: &quot;&quot;,
+        &quot;featuredArtistsId&quot;: &quot;&quot;,
+        &quot;explicitContent&quot;: 0,
+        &quot;playCount&quot;: null,
+        &quot;language&quot;: &quot;english&quot;,
+        &quot;hasLyrics&quot;: &quot;false&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/song/lets-love/LwQzAyMCVmw&quot;,
+        &quot;copyright&quot;: &quot;Under Exclusive Licence to Warner Music France, Label Parlophone, ℗ 2020 What A Producer Ltd&quot;,
+        &quot;image&quot;: [
+          {
+            &quot;quality&quot;: &quot;50x50&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/000/Let-s-Love-English-2020-20200907113205-50x50.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;150x150&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/000/Let-s-Love-English-2020-20200907113205-150x150.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;500x500&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/000/Let-s-Love-English-2020-20200907113205-500x500.jpg&quot;
+          }
+        ],
+        &quot;downloadUrl&quot;: [
+          {
+            &quot;quality&quot;: &quot;12kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/000/779f6ded896bacae3c5fec13c4b8ac02_12.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;48kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/000/779f6ded896bacae3c5fec13c4b8ac02_48.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;96kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/000/779f6ded896bacae3c5fec13c4b8ac02_96.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;160kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/000/779f6ded896bacae3c5fec13c4b8ac02_160.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;320kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/000/779f6ded896bacae3c5fec13c4b8ac02_320.mp4&quot;
+          }
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;URuxt8q-&quot;,
+        &quot;name&quot;: &quot;The Greatest&quot;,
+        &quot;album&quot;: {
+          &quot;id&quot;: &quot;2786558&quot;,
+          &quot;name&quot;: &quot;This Is Acting (Deluxe Version)&quot;,
+          &quot;url&quot;: &quot;https://www.jiosaavn.com/album/this-is-acting-deluxe-version/vmjUuWv7xeY_&quot;
+        },
+        &quot;year&quot;: &quot;2016&quot;,
+        &quot;releaseDate&quot;: null,
+        &quot;duration&quot;: &quot;210&quot;,
+        &quot;label&quot;: &quot;Monkey Puzzle Records/RCA Records&quot;,
+        &quot;primaryArtists&quot;: &quot;Sia&quot;,
+        &quot;primaryArtistsId&quot;: &quot;568707&quot;,
+        &quot;featuredArtists&quot;: &quot;Kendrick Lamar&quot;,
+        &quot;featuredArtistsId&quot;: &quot;612060&quot;,
+        &quot;explicitContent&quot;: 0,
+        &quot;playCount&quot;: null,
+        &quot;language&quot;: &quot;english&quot;,
+        &quot;hasLyrics&quot;: &quot;false&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/song/the-greatest/JToeSQAIRh4&quot;,
+        &quot;copyright&quot;: &quot;(P) 2016 Monkey Puzzle Records, under exclusive license to RCA Records&quot;,
+        &quot;image&quot;: [
+          {
+            &quot;quality&quot;: &quot;50x50&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/832/This-Is-Acting-Deluxe-Version-English-2016-50x50.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;150x150&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/832/This-Is-Acting-Deluxe-Version-English-2016-150x150.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;500x500&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/832/This-Is-Acting-Deluxe-Version-English-2016-500x500.jpg&quot;
+          }
+        ],
+        &quot;downloadUrl&quot;: [
+          {
+            &quot;quality&quot;: &quot;12kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/832/54f46d195029b2756f567bf9976e71dc_12.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;48kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/832/54f46d195029b2756f567bf9976e71dc_48.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;96kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/832/54f46d195029b2756f567bf9976e71dc_96.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;160kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/832/54f46d195029b2756f567bf9976e71dc_160.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;320kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/832/54f46d195029b2756f567bf9976e71dc_320.mp4&quot;
+          }
+        ]
+      },
+      {
+        &quot;id&quot;: &quot;wGWwbFVX&quot;,
+        &quot;name&quot;: &quot;Courage to Change&quot;,
+        &quot;album&quot;: {
+          &quot;id&quot;: &quot;22703343&quot;,
+          &quot;name&quot;: &quot;Courage to Change&quot;,
+          &quot;url&quot;: &quot;https://www.jiosaavn.com/album/courage-to-change/9ePIgBpmNqo_&quot;
+        },
+        &quot;year&quot;: &quot;2020&quot;,
+        &quot;releaseDate&quot;: null,
+        &quot;duration&quot;: &quot;292&quot;,
+        &quot;label&quot;: &quot;Atlantic Records&quot;,
+        &quot;primaryArtists&quot;: &quot;Sia&quot;,
+        &quot;primaryArtistsId&quot;: &quot;568707&quot;,
+        &quot;featuredArtists&quot;: &quot;&quot;,
+        &quot;featuredArtistsId&quot;: &quot;&quot;,
+        &quot;explicitContent&quot;: 0,
+        &quot;playCount&quot;: null,
+        &quot;language&quot;: &quot;english&quot;,
+        &quot;hasLyrics&quot;: &quot;false&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/song/courage-to-change/By88RhZ2YWs&quot;,
+        &quot;copyright&quot;: &quot;under exclusive license to Atlantic Recording Corporation for the United States and WEA International for the world outside of the United States., ℗ 2020 Monkey Puzzle Music, Inc.&quot;,
+        &quot;image&quot;: [
+          {
+            &quot;quality&quot;: &quot;50x50&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/760/Courage-to-Change-English-2020-20210116043159-50x50.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;150x150&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/760/Courage-to-Change-English-2020-20210116043159-150x150.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;500x500&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/760/Courage-to-Change-English-2020-20210116043159-500x500.jpg&quot;
+          }
+        ],
+        &quot;downloadUrl&quot;: [
+          {
+            &quot;quality&quot;: &quot;12kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/760/a12d5f509af193baee11f859ec61c321_12.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;48kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/760/a12d5f509af193baee11f859ec61c321_48.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;96kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/760/a12d5f509af193baee11f859ec61c321_96.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;160kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/760/a12d5f509af193baee11f859ec61c321_160.mp4&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;320kbps&quot;,
+            &quot;link&quot;: &quot;https://aac.saavncdn.com/760/a12d5f509af193baee11f859ec61c321_320.mp4&quot;
+          }
+        ]
+      }
+    ]
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Route Paramter</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-white dark:text-dark-850 bg-gray-900 dark:bg-white h-6 px-2 text-xs rounded-md">
+    <span>id</span>
+</span></td>
+<td>Artist ID</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>True</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Query Paramter</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-white dark:text-dark-850 bg-gray-900 dark:bg-white h-6 px-2 text-xs rounded-md">
+    <span>page</span>
+</span></td>
+<td>Page Number</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>False</span>
+</span></td>
+</tr>
+<tr>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-white dark:text-dark-850 bg-gray-900 dark:bg-white h-6 px-2 text-xs rounded-md">
+    <span>category</span>
+</span></td>
+<td>Song type. <code v-pre>alphabetical</code> or <code v-pre>latest</code></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>False</span>
+</span></td>
+</tr>
+<tr>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-white dark:text-dark-850 bg-gray-900 dark:bg-white h-6 px-2 text-xs rounded-md">
+    <span>sort</span>
+</span></td>
+<td>Song sort order. <code v-pre>asc</code> or <code v-pre>desc</code></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>False</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="artist-albums-by-artist-id">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#artist-albums-by-artist-id">#</doc-anchor-trigger>
+        <span>Artist Albums by artist ID</span>
+    </h2>
+</doc-anchor-target>
+<doc-tabs>
+<doc-tab v-cloak id="request">
+<template #title>Request</template>
+<p>HTTP</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">https://sparklines-backend.samay15jan.xyz/artists/568707/albums?page=1</code></pre>
+</doc-codeblock></div>
+<p>CURL</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">curl -X GET 'https://sparklines-backend.samay15jan.xyz/artists/568707/albums?page=1' \
+ -H 'content-type: application/json'</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab v-cloak id="response">
+<template #title>Response</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-json"><code v-pre class="language-json">{
+  &quot;status&quot;: &quot;SUCCESS&quot;,
+  &quot;message&quot;: null,
+  &quot;data&quot;: {
+    &quot;total&quot;: 57,
+    &quot;lastPage&quot;: false,
+    &quot;results&quot;: [
+      {
+        &quot;id&quot;: &quot;1759503&quot;,
+        &quot;name&quot;: &quot;This Is Acting&quot;,
+        &quot;year&quot;: &quot;2016&quot;,
+        &quot;playCount&quot;: &quot;&quot;,
+        &quot;language&quot;: &quot;english&quot;,
+        &quot;explicitContent&quot;: &quot;0&quot;,
+        &quot;songCount&quot;: &quot;12&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/this-is-acting/WvjkPt-7qiM_&quot;,
+        &quot;primaryArtists&quot;: [
+          {
+            &quot;id&quot;: &quot;568707&quot;,
+            &quot;name&quot;: &quot;Sia&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;primary_artists&quot;
+          }
+        ],
+        &quot;featuredArtists&quot;: [],
+        &quot;artists&quot;: [
+          {
+            &quot;id&quot;: &quot;568707&quot;,
+            &quot;name&quot;: &quot;Sia&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;580548&quot;,
+            &quot;name&quot;: &quot;Jack Antonoff&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/jack-antonoff-/rdoVp6QHYCs_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;568885&quot;,
+            &quot;name&quot;: &quot;Tyler Williams&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/tyler-williams-/Pwm9Pf4a4Dw_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;1809857&quot;,
+            &quot;name&quot;: &quot;Josh Valle&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/josh-valle-/ZGXtFTe5F0M_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;658348&quot;,
+            &quot;name&quot;: &quot;Nikhil Seetharam&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/nikhil-seetharam-/f,NXTNVFgbY_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;566183&quot;,
+            &quot;name&quot;: &quot;Greg Kurstin&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/greg-kurstin-/KfmpE496lLA_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;567638&quot;,
+            &quot;name&quot;: &quot;Mark Andrews&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/mark-andrews-/EBiUvCCC75Y_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;521247&quot;,
+            &quot;name&quot;: &quot;Robi Rosa&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/robi-rosa-/nH4jzHB1eU8_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;528601&quot;,
+            &quot;name&quot;: &quot;Joseph Longo&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/joseph-longo-/fitKyUh5m5w_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;521379&quot;,
+            &quot;name&quot;: &quot;Tim Kelley&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/tim-kelley-/aebxpLoe,-U_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;521378&quot;,
+            &quot;name&quot;: &quot;Bob Robinson&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/bob-robinson-/4gMkspcfaJk_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;514316&quot;,
+            &quot;name&quot;: &quot;Desmond Child&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/desmond-child-/WqYX6MVgD44_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;567639&quot;,
+            &quot;name&quot;: &quot;Marquis Collins&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/marquis-collins-/7ETnh6oBCZ0_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;698278&quot;,
+            &quot;name&quot;: &quot;Jesse Shatkin&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/jesse-shatkin-/oDkTzAkwnpM_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;841304&quot;,
+            &quot;name&quot;: &quot;Jasper Leak&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/jasper-leak-/3wncemq56Ok_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;568164&quot;,
+            &quot;name&quot;: &quot;Christopher Braide&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/christopher-braide-/sfw1RUQUD4E_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;610905&quot;,
+            &quot;name&quot;: &quot;Adele&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/adele-/yc6n84bIDm8_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;4039753&quot;,
+            &quot;name&quot;: &quot;Tobias Jesso&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/tobias-jesso-/E4ylhEcVbHw_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;527097&quot;,
+            &quot;name&quot;: &quot;Jr.&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/jr.-/mZP,lrb0a3I_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;615569&quot;,
+            &quot;name&quot;: &quot;Kanye West&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/kanye-west-/dvjzF8PFk8w_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;1505445&quot;,
+            &quot;name&quot;: &quot;Noah Goldstein&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/noah-goldstein-/I3Z0dlMrpbk_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;1809855&quot;,
+            &quot;name&quot;: &quot;Charles Misodi Njapa&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/charles-misodi-njapa-/zXGkG0Y-eUA_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;&quot;,
+            &quot;name&quot;: &quot;Dom $olo&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/dom-%24olo-/&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;568707&quot;,
+            &quot;name&quot;: &quot;Sia&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;singers&quot;
+          },
+          {
+            &quot;id&quot;: &quot;1809856&quot;,
+            &quot;name&quot;: &quot;Erick Serna&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/erick-serna-/RfwjFKq80w4_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;singers&quot;
+          }
+        ],
+        &quot;image&quot;: [
+          {
+            &quot;quality&quot;: &quot;50x50&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/203/This-Is-Acting-English-2016-50x50.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;150x150&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/203/This-Is-Acting-English-2016-150x150.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;500x500&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/203/This-Is-Acting-English-2016-500x500.jpg&quot;
+          }
+        ],
+        &quot;songs&quot;: []
+      },
+      {
+        &quot;id&quot;: &quot;29087438&quot;,
+        &quot;name&quot;: &quot;Titanium (feat. Sia) (David Guetta &amp;amp; MORTEN Future Rave Remix)&quot;,
+        &quot;year&quot;: &quot;2021&quot;,
+        &quot;playCount&quot;: &quot;&quot;,
+        &quot;language&quot;: &quot;english&quot;,
+        &quot;explicitContent&quot;: &quot;0&quot;,
+        &quot;songCount&quot;: &quot;2&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/titanium-feat.-sia-david-guetta--morten-future-rave-remix/o4lA-vfOkD0_&quot;,
+        &quot;primaryArtists&quot;: [
+          {
+            &quot;id&quot;: &quot;568665&quot;,
+            &quot;name&quot;: &quot;David Guetta&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/david-guetta-/AnfLTAoYH1I_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;primary_artists&quot;
+          }
+        ],
+        &quot;featuredArtists&quot;: [],
+        &quot;artists&quot;: [
+          {
+            &quot;id&quot;: &quot;568665&quot;,
+            &quot;name&quot;: &quot;David Guetta&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/david-guetta-/AnfLTAoYH1I_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;singers&quot;
+          }
+        ],
+        &quot;image&quot;: [
+          {
+            &quot;quality&quot;: &quot;50x50&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/425/Titanium-feat-Sia-David-Guetta-MORTEN-Future-Rave-Remix--English-2021-20210817122153-50x50.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;150x150&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/425/Titanium-feat-Sia-David-Guetta-MORTEN-Future-Rave-Remix--English-2021-20210817122153-150x150.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;500x500&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/425/Titanium-feat-Sia-David-Guetta-MORTEN-Future-Rave-Remix--English-2021-20210817122153-500x500.jpg&quot;
+          }
+        ],
+        &quot;songs&quot;: []
+      },
+      {
+        &quot;id&quot;: &quot;2786558&quot;,
+        &quot;name&quot;: &quot;This Is Acting (Deluxe Version)&quot;,
+        &quot;year&quot;: &quot;2016&quot;,
+        &quot;playCount&quot;: &quot;&quot;,
+        &quot;language&quot;: &quot;english&quot;,
+        &quot;explicitContent&quot;: &quot;0&quot;,
+        &quot;songCount&quot;: &quot;19&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/this-is-acting-deluxe-version/vmjUuWv7xeY_&quot;,
+        &quot;primaryArtists&quot;: [
+          {
+            &quot;id&quot;: &quot;568707&quot;,
+            &quot;name&quot;: &quot;Sia&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;primary_artists&quot;
+          }
+        ],
+        &quot;featuredArtists&quot;: [],
+        &quot;artists&quot;: [
+          {
+            &quot;id&quot;: &quot;568707&quot;,
+            &quot;name&quot;: &quot;Sia&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;566183&quot;,
+            &quot;name&quot;: &quot;Greg Kurstin&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/greg-kurstin-/KfmpE496lLA_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;610905&quot;,
+            &quot;name&quot;: &quot;Adele&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/adele-/yc6n84bIDm8_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;4039753&quot;,
+            &quot;name&quot;: &quot;Tobias Jesso&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/tobias-jesso-/E4ylhEcVbHw_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;698278&quot;,
+            &quot;name&quot;: &quot;Jr.&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/jr.-/oDkTzAkwnpM_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;568164&quot;,
+            &quot;name&quot;: &quot;Jesse Shatkin&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/jesse-shatkin-/sfw1RUQUD4E_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;527097&quot;,
+            &quot;name&quot;: &quot;Christopher Braide&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/christopher-braide-/mZP,lrb0a3I_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;615569&quot;,
+            &quot;name&quot;: &quot;Kanye West&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/kanye-west-/dvjzF8PFk8w_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;1505445&quot;,
+            &quot;name&quot;: &quot;Noah Goldstein&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/noah-goldstein-/I3Z0dlMrpbk_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;1809855&quot;,
+            &quot;name&quot;: &quot;Charles Misodi Njapa&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/charles-misodi-njapa-/zXGkG0Y-eUA_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;580548&quot;,
+            &quot;name&quot;: &quot;Dom $olo&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/dom-%24olo-/rdoVp6QHYCs_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;568885&quot;,
+            &quot;name&quot;: &quot;Jack Antonoff&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/jack-antonoff-/Pwm9Pf4a4Dw_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;1809857&quot;,
+            &quot;name&quot;: &quot;Tyler Williams&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/tyler-williams-/ZGXtFTe5F0M_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;658348&quot;,
+            &quot;name&quot;: &quot;Josh Valle&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/josh-valle-/f,NXTNVFgbY_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;567638&quot;,
+            &quot;name&quot;: &quot;Nikhil Seetharam&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/nikhil-seetharam-/EBiUvCCC75Y_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;521247&quot;,
+            &quot;name&quot;: &quot;Mark Andrews&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/mark-andrews-/nH4jzHB1eU8_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;528601&quot;,
+            &quot;name&quot;: &quot;Robi Rosa&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/robi-rosa-/fitKyUh5m5w_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;521379&quot;,
+            &quot;name&quot;: &quot;Joseph Longo&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/joseph-longo-/aebxpLoe,-U_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;521378&quot;,
+            &quot;name&quot;: &quot;Tim Kelley&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/tim-kelley-/4gMkspcfaJk_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;514316&quot;,
+            &quot;name&quot;: &quot;Bob Robinson&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/bob-robinson-/WqYX6MVgD44_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;567639&quot;,
+            &quot;name&quot;: &quot;Desmond Child&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/desmond-child-/7ETnh6oBCZ0_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;841304&quot;,
+            &quot;name&quot;: &quot;Marquis Collins&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/marquis-collins-/3wncemq56Ok_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;562807&quot;,
+            &quot;name&quot;: &quot;Jasper Leak&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/jasper-leak-/YEox-ir-av8_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;612060&quot;,
+            &quot;name&quot;: &quot;Sean Paul Henriques&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sean-paul-henriques-/44fbKDllOW0_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;565825&quot;,
+            &quot;name&quot;: &quot;Kendrick Lamar&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/kendrick-lamar-/rUr,7Yz1jT4_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;566134&quot;,
+            &quot;name&quot;: &quot;Blair Mackichan&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/blair-mackichan-/d5KhRR8LS28_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;&quot;,
+            &quot;name&quot;: &quot;Samuel Dixon&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/samuel-dixon-/&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;568707&quot;,
+            &quot;name&quot;: &quot;Sia&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;singers&quot;
+          },
+          {
+            &quot;id&quot;: &quot;1809856&quot;,
+            &quot;name&quot;: &quot;Erick Serna&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/erick-serna-/RfwjFKq80w4_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;singers&quot;
+          },
+          {
+            &quot;id&quot;: &quot;468845&quot;,
+            &quot;name&quot;: &quot;Sean Paul&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sean-paul-/GQPg5UvdL60_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;singers&quot;
+          },
+          {
+            &quot;id&quot;: &quot;612060&quot;,
+            &quot;name&quot;: &quot;Kendrick Lamar&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/kendrick-lamar-/44fbKDllOW0_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;singers&quot;
+          }
+        ],
+        &quot;image&quot;: [
+          {
+            &quot;quality&quot;: &quot;50x50&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/832/This-Is-Acting-Deluxe-Version-English-2016-50x50.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;150x150&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/832/This-Is-Acting-Deluxe-Version-English-2016-150x150.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;500x500&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/832/This-Is-Acting-Deluxe-Version-English-2016-500x500.jpg&quot;
+          }
+        ],
+        &quot;songs&quot;: []
+      },
+      {
+        &quot;id&quot;: &quot;11562344&quot;,
+        &quot;name&quot;: &quot;Dusk Till Dawn (The Remixes)&quot;,
+        &quot;year&quot;: &quot;2017&quot;,
+        &quot;playCount&quot;: &quot;&quot;,
+        &quot;language&quot;: &quot;english&quot;,
+        &quot;explicitContent&quot;: &quot;0&quot;,
+        &quot;songCount&quot;: &quot;3&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/dusk-till-dawn-the-remixes/6cqlL2lgIi4_&quot;,
+        &quot;primaryArtists&quot;: [
+          {
+            &quot;id&quot;: &quot;577203&quot;,
+            &quot;name&quot;: &quot;Zayn Malik&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/zayn-malik-/SGRc0EuPzQ0_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;primary_artists&quot;
+          }
+        ],
+        &quot;featuredArtists&quot;: [],
+        &quot;artists&quot;: [
+          {
+            &quot;id&quot;: &quot;577203&quot;,
+            &quot;name&quot;: &quot;Zayn Malik&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/zayn-malik-/SGRc0EuPzQ0_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;566183&quot;,
+            &quot;name&quot;: &quot;Greg Kurstin&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/greg-kurstin-/KfmpE496lLA_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;568707&quot;,
+            &quot;name&quot;: &quot;Sia&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;1058756&quot;,
+            &quot;name&quot;: &quot;Alex Oriet&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/alex-oriet-/IC9qG5bDZ-A_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;1058759&quot;,
+            &quot;name&quot;: &quot;David Phelan&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/david-phelan-/aYbTv-ITL,4_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;577203&quot;,
+            &quot;name&quot;: &quot;Zayn Malik&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/zayn-malik-/SGRc0EuPzQ0_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;singers&quot;
+          },
+          {
+            &quot;id&quot;: &quot;568707&quot;,
+            &quot;name&quot;: &quot;Sia&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;singers&quot;
+          },
+          {
+            &quot;id&quot;: &quot;1274161&quot;,
+            &quot;name&quot;: &quot;Luca Lush&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/luca-lush-/7h5ntdXAcT0_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;singers&quot;
+          },
+          {
+            &quot;id&quot;: &quot;3917762&quot;,
+            &quot;name&quot;: &quot;ZAYN x Luca Lush&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/zayn-x-luca-lush-/14df6wmWOfQ_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;singers&quot;
+          }
+        ],
+        &quot;image&quot;: [
+          {
+            &quot;quality&quot;: &quot;50x50&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/643/Dusk-Till-Dawn-The-Remixes--English-2017-20170927012006-50x50.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;150x150&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/643/Dusk-Till-Dawn-The-Remixes--English-2017-20170927012006-150x150.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;500x500&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/643/Dusk-Till-Dawn-The-Remixes--English-2017-20170927012006-500x500.jpg&quot;
+          }
+        ],
+        &quot;songs&quot;: []
+      },
+      {
+        &quot;id&quot;: &quot;1209835&quot;,
+        &quot;name&quot;: &quot;Breathe Me&quot;,
+        &quot;year&quot;: &quot;2006&quot;,
+        &quot;playCount&quot;: &quot;&quot;,
+        &quot;language&quot;: &quot;english&quot;,
+        &quot;explicitContent&quot;: &quot;0&quot;,
+        &quot;songCount&quot;: &quot;2&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/breathe-me/6dbtDnnxZ6c_&quot;,
+        &quot;primaryArtists&quot;: [
+          {
+            &quot;id&quot;: &quot;568707&quot;,
+            &quot;name&quot;: &quot;Sia&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;primary_artists&quot;
+          }
+        ],
+        &quot;featuredArtists&quot;: [],
+        &quot;artists&quot;: [
+          {
+            &quot;id&quot;: &quot;568707&quot;,
+            &quot;name&quot;: &quot;Sia&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;568708&quot;,
+            &quot;name&quot;: &quot;Dan Carey&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/dan-carey-/uF2vWqmZEJs_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;568707&quot;,
+            &quot;name&quot;: &quot;Sia&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;singers&quot;
+          }
+        ],
+        &quot;image&quot;: [
+          {
+            &quot;quality&quot;: &quot;50x50&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/850/Breathe-Me-English-2006-50x50.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;150x150&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/850/Breathe-Me-English-2006-150x150.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;500x500&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/850/Breathe-Me-English-2006-500x500.jpg&quot;
+          }
+        ],
+        &quot;songs&quot;: []
+      },
+      {
+        &quot;id&quot;: &quot;16292374&quot;,
+        &quot;name&quot;: &quot;Titanium (feat. Sia)&quot;,
+        &quot;year&quot;: &quot;2011&quot;,
+        &quot;playCount&quot;: &quot;&quot;,
+        &quot;language&quot;: &quot;english&quot;,
+        &quot;explicitContent&quot;: &quot;0&quot;,
+        &quot;songCount&quot;: &quot;5&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/titanium-feat.-sia/TEMGHDQpc48_&quot;,
+        &quot;primaryArtists&quot;: [
+          {
+            &quot;id&quot;: &quot;568665&quot;,
+            &quot;name&quot;: &quot;David Guetta&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/david-guetta-/AnfLTAoYH1I_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;primary_artists&quot;
+          }
+        ],
+        &quot;featuredArtists&quot;: [],
+        &quot;artists&quot;: [
+          {
+            &quot;id&quot;: &quot;568665&quot;,
+            &quot;name&quot;: &quot;David Guetta&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/david-guetta-/AnfLTAoYH1I_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;singers&quot;
+          }
+        ],
+        &quot;image&quot;: [
+          {
+            &quot;quality&quot;: &quot;50x50&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/752/Titanium-feat-Sia--English-2011-20190607045907-50x50.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;150x150&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/752/Titanium-feat-Sia--English-2011-20190607045907-150x150.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;500x500&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/752/Titanium-feat-Sia--English-2011-20190607045907-500x500.jpg&quot;
+          }
+        ],
+        &quot;songs&quot;: []
+      },
+      {
+        &quot;id&quot;: &quot;12625205&quot;,
+        &quot;name&quot;: &quot;Clap Your Hands&quot;,
+        &quot;year&quot;: &quot;2010&quot;,
+        &quot;playCount&quot;: &quot;&quot;,
+        &quot;language&quot;: &quot;english&quot;,
+        &quot;explicitContent&quot;: &quot;0&quot;,
+        &quot;songCount&quot;: &quot;3&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/clap-your-hands/XIxUtxFutYQ_&quot;,
+        &quot;primaryArtists&quot;: [
+          {
+            &quot;id&quot;: &quot;568707&quot;,
+            &quot;name&quot;: &quot;Sia&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;primary_artists&quot;
+          }
+        ],
+        &quot;featuredArtists&quot;: [],
+        &quot;artists&quot;: [
+          {
+            &quot;id&quot;: &quot;568707&quot;,
+            &quot;name&quot;: &quot;Sia&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;566134&quot;,
+            &quot;name&quot;: &quot;Samuel Dixon&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/samuel-dixon-/d5KhRR8LS28_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;568707&quot;,
+            &quot;name&quot;: &quot;Sia&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;singers&quot;
+          }
+        ],
+        &quot;image&quot;: [
+          {
+            &quot;quality&quot;: &quot;50x50&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/076/Clap-Your-Hands-English-2010-20180409212120-50x50.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;150x150&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/076/Clap-Your-Hands-English-2010-20180409212120-150x150.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;500x500&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/076/Clap-Your-Hands-English-2010-20180409212120-500x500.jpg&quot;
+          }
+        ],
+        &quot;songs&quot;: []
+      },
+      {
+        &quot;id&quot;: &quot;2168241&quot;,
+        &quot;name&quot;: &quot;Cheap Thrills (Remixes)&quot;,
+        &quot;year&quot;: &quot;2016&quot;,
+        &quot;playCount&quot;: &quot;&quot;,
+        &quot;language&quot;: &quot;english&quot;,
+        &quot;explicitContent&quot;: &quot;0&quot;,
+        &quot;songCount&quot;: &quot;7&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/cheap-thrills-remixes/JOfHNPDEC9Q_&quot;,
+        &quot;primaryArtists&quot;: [
+          {
+            &quot;id&quot;: &quot;568707&quot;,
+            &quot;name&quot;: &quot;Sia&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;primary_artists&quot;
+          }
+        ],
+        &quot;featuredArtists&quot;: [],
+        &quot;artists&quot;: [
+          {
+            &quot;id&quot;: &quot;568707&quot;,
+            &quot;name&quot;: &quot;Sia&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;566183&quot;,
+            &quot;name&quot;: &quot;Greg Kurstin&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/greg-kurstin-/KfmpE496lLA_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;562807&quot;,
+            &quot;name&quot;: &quot;Sean Paul Henriques&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sean-paul-henriques-/YEox-ir-av8_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;568707&quot;,
+            &quot;name&quot;: &quot;Sia&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;singers&quot;
+          },
+          {
+            &quot;id&quot;: &quot;468845&quot;,
+            &quot;name&quot;: &quot;Sean Paul&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sean-paul-/GQPg5UvdL60_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;singers&quot;
+          }
+        ],
+        &quot;image&quot;: [
+          {
+            &quot;quality&quot;: &quot;50x50&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/330/Cheap-Thrills-Remixes-English-2016-50x50.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;150x150&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/330/Cheap-Thrills-Remixes-English-2016-150x150.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;500x500&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/330/Cheap-Thrills-Remixes-English-2016-500x500.jpg&quot;
+          }
+        ],
+        &quot;songs&quot;: []
+      },
+      {
+        &quot;id&quot;: &quot;1100925&quot;,
+        &quot;name&quot;: &quot;We Are Born&quot;,
+        &quot;year&quot;: &quot;2010&quot;,
+        &quot;playCount&quot;: &quot;&quot;,
+        &quot;language&quot;: &quot;english&quot;,
+        &quot;explicitContent&quot;: &quot;0&quot;,
+        &quot;songCount&quot;: &quot;13&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/we-are-born/2SDibEmF714_&quot;,
+        &quot;primaryArtists&quot;: [
+          {
+            &quot;id&quot;: &quot;568707&quot;,
+            &quot;name&quot;: &quot;Sia&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;primary_artists&quot;
+          }
+        ],
+        &quot;featuredArtists&quot;: [],
+        &quot;artists&quot;: [
+          {
+            &quot;id&quot;: &quot;568707&quot;,
+            &quot;name&quot;: &quot;Sia&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;568708&quot;,
+            &quot;name&quot;: &quot;Dan Carey&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/dan-carey-/uF2vWqmZEJs_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;566134&quot;,
+            &quot;name&quot;: &quot;Samuel Dixon&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/samuel-dixon-/d5KhRR8LS28_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;566183&quot;,
+            &quot;name&quot;: &quot;Greg Kurstin&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/greg-kurstin-/KfmpE496lLA_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;568709&quot;,
+            &quot;name&quot;: &quot;Lauren Flax&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/lauren-flax-/XrnypPu9TFQ_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;527401&quot;,
+            &quot;name&quot;: &quot;Simon Katz&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/simon-katz-/PCxzvWJOBdY_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;568710&quot;,
+            &quot;name&quot;: &quot;Jesse Graham&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/jesse-graham-/Y3l7k7SgHc4_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;568711&quot;,
+            &quot;name&quot;: &quot;Henry Binns&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/henry-binns-/sOAewcqB3I0_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;568712&quot;,
+            &quot;name&quot;: &quot;Ciccone&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/ciccone-/NWn6ifcYHRM_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;568713&quot;,
+            &quot;name&quot;: &quot;Leonard&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/leonard-/xJS,lw2ESN8_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;music&quot;
+          },
+          {
+            &quot;id&quot;: &quot;568707&quot;,
+            &quot;name&quot;: &quot;Sia&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;singers&quot;
+          }
+        ],
+        &quot;image&quot;: [
+          {
+            &quot;quality&quot;: &quot;50x50&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/045/We-Are-Born-2010-50x50.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;150x150&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/045/We-Are-Born-2010-150x150.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;500x500&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/045/We-Are-Born-2010-500x500.jpg&quot;
+          }
+        ],
+        &quot;songs&quot;: []
+      },
+      {
+        &quot;id&quot;: &quot;25290812&quot;,
+        &quot;name&quot;: &quot;Music (Songs From And Inspired By The Motion Picture)&quot;,
+        &quot;year&quot;: &quot;2021&quot;,
+        &quot;playCount&quot;: &quot;&quot;,
+        &quot;language&quot;: &quot;english&quot;,
+        &quot;explicitContent&quot;: &quot;0&quot;,
+        &quot;songCount&quot;: &quot;14&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/music-songs-from-and-inspired-by-the-motion-picture/T1uHfvBs6Ik_&quot;,
+        &quot;primaryArtists&quot;: [
+          {
+            &quot;id&quot;: &quot;568707&quot;,
+            &quot;name&quot;: &quot;Sia&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;primary_artists&quot;
+          }
+        ],
+        &quot;featuredArtists&quot;: [],
+        &quot;artists&quot;: [
+          {
+            &quot;id&quot;: &quot;568707&quot;,
+            &quot;name&quot;: &quot;Sia&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/sia-/C4hxFiXrHws_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;singers&quot;
+          },
+          {
+            &quot;id&quot;: &quot;568665&quot;,
+            &quot;name&quot;: &quot;David Guetta&quot;,
+            &quot;url&quot;: &quot;https://www.jiosaavn.com/artist/david-guetta-/AnfLTAoYH1I_&quot;,
+            &quot;image&quot;: false,
+            &quot;type&quot;: &quot;artist&quot;,
+            &quot;role&quot;: &quot;singers&quot;
+          }
+        ],
+        &quot;image&quot;: [
+          {
+            &quot;quality&quot;: &quot;50x50&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/780/Music-Songs-From-And-Inspired-By-The-Motion-Picture--English-2021-20210212055715-50x50.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;150x150&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/780/Music-Songs-From-And-Inspired-By-The-Motion-Picture--English-2021-20210212055715-150x150.jpg&quot;
+          },
+          {
+            &quot;quality&quot;: &quot;500x500&quot;,
+            &quot;link&quot;: &quot;https://c.saavncdn.com/780/Music-Songs-From-And-Inspired-By-The-Motion-Picture--English-2021-20210212055715-500x500.jpg&quot;
+          }
+        ],
+        &quot;songs&quot;: []
+      }
+    ]
+  }
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Route Paramter</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-white dark:text-dark-850 bg-gray-900 dark:bg-white h-6 px-2 text-xs rounded-md">
+    <span>id</span>
+</span></td>
+<td>Artist ID</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>True</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Query Paramter</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-white dark:text-dark-850 bg-gray-900 dark:bg-white h-6 px-2 text-xs rounded-md">
+    <span>page</span>
+</span></td>
+<td>Page Number</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>False</span>
+</span></td>
+</tr>
+<tr>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-white dark:text-dark-850 bg-gray-900 dark:bg-white h-6 px-2 text-xs rounded-md">
+    <span>category</span>
+</span></td>
+<td>Album type. <code v-pre>alphabetical</code> or <code v-pre>latest</code></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>False</span>
+</span></td>
+</tr>
+<tr>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-white dark:text-dark-850 bg-gray-900 dark:bg-white h-6 px-2 text-xs rounded-md">
+    <span>sort</span>
+</span></td>
+<td>Album sort order. <code v-pre>asc</code> or <code v-pre>desc</code></td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>False</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="artist-recommended-songs-by-artist-id-and-song-id">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#artist-recommended-songs-by-artist-id-and-song-id">#</doc-anchor-trigger>
+        <span>Artist Recommended Songs by artist ID and song ID</span>
+    </h2>
+</doc-anchor-target>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr-lg rounded-br-lg doc-callout bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Note: Song ID is required to get the recommendations based on the song.</p>
+        </div>
+    </div>
+</div>
+<doc-tabs>
+<doc-tab v-cloak id="request">
+<template #title>Request</template>
+<p>HTTP</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">https://sparklines-backend.samay15jan.xyz/artists/568707/recommendations/zikdtWU6</code></pre>
+</doc-codeblock></div>
+<p>CURL</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">curl -X GET 'https://sparklines-backend.samay15jan.xyz/artists/568707/recommendations/zikdtWU6' \
+ -H 'content-type: application/json'</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+<doc-tab v-cloak id="response">
+<template #title>Response</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-json"><code v-pre class="language-json">{
+  &quot;status&quot;: &quot;SUCCESS&quot;,
+  &quot;message&quot;: null,
+  &quot;data&quot;: [
+    {
+      &quot;id&quot;: &quot;jPaBa3UM&quot;,
+      &quot;name&quot;: &quot;Genius&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;album&quot;: {
+        &quot;id&quot;: &quot;12791562&quot;,
+        &quot;name&quot;: &quot;Genius&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/genius/nSfwzzD90wk_&quot;
+      },
+      &quot;year&quot;: &quot;2018&quot;,
+      &quot;releaseDate&quot;: &quot;2018-05-03&quot;,
+      &quot;duration&quot;: &quot;216&quot;,
+      &quot;label&quot;: &quot;Records/Columbia&quot;,
+      &quot;primaryArtists&quot;: &quot;Lsd&quot;,
+      &quot;primaryArtistsId&quot;: &quot;1153577&quot;,
+      &quot;featuredArtists&quot;: &quot;Sia, Diplo, Labrinth, Sia, Diplo, And Labrinth&quot;,
+      &quot;featuredArtistsId&quot;: &quot;568707, 599061, 577223, 4799650&quot;,
+      &quot;explicitContent&quot;: 0,
+      &quot;playCount&quot;: 2479365,
+      &quot;language&quot;: &quot;english&quot;,
+      &quot;hasLyrics&quot;: &quot;false&quot;,
+      &quot;url&quot;: &quot;https://www.jiosaavn.com/song/genius/GjgKcxUDYn4&quot;,
+      &quot;copyright&quot;: &quot;(P) 2018 RECORDS, LLC / Columbia&quot;,
+      &quot;image&quot;: [
+        {
+          &quot;quality&quot;: &quot;50x50&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/509/Genius-English-2018-20180503113343-50x50.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;150x150&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/509/Genius-English-2018-20180503113343-150x150.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;500x500&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/509/Genius-English-2018-20180503113343-500x500.jpg&quot;
+        }
+      ],
+      &quot;downloadUrl&quot;: [
+        {
+          &quot;quality&quot;: &quot;12kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/509/f06303bea5e0b7e3f30d023ad23d5cac_12.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;48kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/509/f06303bea5e0b7e3f30d023ad23d5cac_48.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;96kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/509/f06303bea5e0b7e3f30d023ad23d5cac_96.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;160kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/509/f06303bea5e0b7e3f30d023ad23d5cac_160.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;320kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/509/f06303bea5e0b7e3f30d023ad23d5cac_320.mp4&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;m5dBCY1k&quot;,
+      &quot;name&quot;: &quot;Chandelier&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;album&quot;: {
+        &quot;id&quot;: &quot;1152146&quot;,
+        &quot;name&quot;: &quot;Chandelier&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/chandelier/UiL9E3H6XDc_&quot;
+      },
+      &quot;year&quot;: &quot;2014&quot;,
+      &quot;releaseDate&quot;: &quot;2014-03-17&quot;,
+      &quot;duration&quot;: &quot;216&quot;,
+      &quot;label&quot;: &quot;Monkey Puzzle Records&quot;,
+      &quot;primaryArtists&quot;: &quot;Sia&quot;,
+      &quot;primaryArtistsId&quot;: &quot;568707&quot;,
+      &quot;featuredArtists&quot;: &quot;&quot;,
+      &quot;featuredArtistsId&quot;: &quot;&quot;,
+      &quot;explicitContent&quot;: 0,
+      &quot;playCount&quot;: 3998652,
+      &quot;language&quot;: &quot;english&quot;,
+      &quot;hasLyrics&quot;: &quot;false&quot;,
+      &quot;url&quot;: &quot;https://www.jiosaavn.com/song/chandelier/HV0PczdpBlg&quot;,
+      &quot;copyright&quot;: &quot;(P) 2014 Monkey Puzzle Records, under exclusive license to RCA Records&quot;,
+      &quot;image&quot;: [
+        {
+          &quot;quality&quot;: &quot;50x50&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/952/Chandelier-2014-50x50.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;150x150&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/952/Chandelier-2014-150x150.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;500x500&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/952/Chandelier-2014-500x500.jpg&quot;
+        }
+      ],
+      &quot;downloadUrl&quot;: [
+        {
+          &quot;quality&quot;: &quot;12kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/952/7b60337183c7d47ead728f94ebb113cb_12.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;48kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/952/7b60337183c7d47ead728f94ebb113cb_48.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;96kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/952/7b60337183c7d47ead728f94ebb113cb_96.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;160kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/952/7b60337183c7d47ead728f94ebb113cb_160.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;320kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/952/7b60337183c7d47ead728f94ebb113cb_320.mp4&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;4RmwbCw4&quot;,
+      &quot;name&quot;: &quot;Cheap Thrills&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;album&quot;: {
+        &quot;id&quot;: &quot;1744101&quot;,
+        &quot;name&quot;: &quot;Cheap Thrills&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/cheap-thrills/d-w-VzXfYCU_&quot;
+      },
+      &quot;year&quot;: &quot;2015&quot;,
+      &quot;releaseDate&quot;: &quot;2015-12-17&quot;,
+      &quot;duration&quot;: &quot;210&quot;,
+      &quot;label&quot;: &quot;Monkey Puzzle Records/RCA Records&quot;,
+      &quot;primaryArtists&quot;: &quot;Sia&quot;,
+      &quot;primaryArtistsId&quot;: &quot;568707&quot;,
+      &quot;featuredArtists&quot;: &quot;&quot;,
+      &quot;featuredArtistsId&quot;: &quot;&quot;,
+      &quot;explicitContent&quot;: 0,
+      &quot;playCount&quot;: 97262918,
+      &quot;language&quot;: &quot;english&quot;,
+      &quot;hasLyrics&quot;: &quot;false&quot;,
+      &quot;url&quot;: &quot;https://www.jiosaavn.com/song/cheap-thrills/RDoGRhZzQAc&quot;,
+      &quot;copyright&quot;: &quot;(P) 2015 Monkey Puzzle Records, under exclusive license to RCA Records&quot;,
+      &quot;image&quot;: [
+        {
+          &quot;quality&quot;: &quot;50x50&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/722/Cheap-Thrills-English-2015-50x50.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;150x150&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/722/Cheap-Thrills-English-2015-150x150.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;500x500&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/722/Cheap-Thrills-English-2015-500x500.jpg&quot;
+        }
+      ],
+      &quot;downloadUrl&quot;: [
+        {
+          &quot;quality&quot;: &quot;12kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/722/7f3218eb23ec7273f73d5317e5083d7e_12.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;48kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/722/7f3218eb23ec7273f73d5317e5083d7e_48.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;96kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/722/7f3218eb23ec7273f73d5317e5083d7e_96.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;160kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/722/7f3218eb23ec7273f73d5317e5083d7e_160.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;320kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/722/7f3218eb23ec7273f73d5317e5083d7e_320.mp4&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;SxdL_VN6&quot;,
+      &quot;name&quot;: &quot;Dusk Till Dawn (Radio Edit)&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;album&quot;: {
+        &quot;id&quot;: &quot;11453840&quot;,
+        &quot;name&quot;: &quot;Dusk Till Dawn (Radio Edit)&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/dusk-till-dawn-radio-edit/4a-qawJxiqo_&quot;
+      },
+      &quot;year&quot;: &quot;2017&quot;,
+      &quot;releaseDate&quot;: &quot;2017-09-07&quot;,
+      &quot;duration&quot;: &quot;239&quot;,
+      &quot;label&quot;: &quot;RCA Records Label&quot;,
+      &quot;primaryArtists&quot;: &quot;ZAYN&quot;,
+      &quot;primaryArtistsId&quot;: &quot;1881894&quot;,
+      &quot;featuredArtists&quot;: &quot;Sia&quot;,
+      &quot;featuredArtistsId&quot;: &quot;568707&quot;,
+      &quot;explicitContent&quot;: 0,
+      &quot;playCount&quot;: 49688941,
+      &quot;language&quot;: &quot;english&quot;,
+      &quot;hasLyrics&quot;: &quot;false&quot;,
+      &quot;url&quot;: &quot;https://www.jiosaavn.com/song/dusk-till-dawn-radio-edit/IxAPfStmeQU&quot;,
+      &quot;copyright&quot;: &quot;(P) 2017 RCA Records, a division of Sony Music Entertainment&quot;,
+      &quot;image&quot;: [
+        {
+          &quot;quality&quot;: &quot;50x50&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/896/Dusk-Till-Dawn-Radio-Edit--English-2017-20170905191749-50x50.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;150x150&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/896/Dusk-Till-Dawn-Radio-Edit--English-2017-20170905191749-150x150.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;500x500&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/896/Dusk-Till-Dawn-Radio-Edit--English-2017-20170905191749-500x500.jpg&quot;
+        }
+      ],
+      &quot;downloadUrl&quot;: [
+        {
+          &quot;quality&quot;: &quot;12kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/896/ad19c4a75775ccdef32905de23fc10c5_12.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;48kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/896/ad19c4a75775ccdef32905de23fc10c5_48.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;96kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/896/ad19c4a75775ccdef32905de23fc10c5_96.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;160kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/896/ad19c4a75775ccdef32905de23fc10c5_160.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;320kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/896/ad19c4a75775ccdef32905de23fc10c5_320.mp4&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;_lX2W2a_&quot;,
+      &quot;name&quot;: &quot;Let&amp;#039;s Love&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;album&quot;: {
+        &quot;id&quot;: &quot;22338976&quot;,
+        &quot;name&quot;: &quot;Let&amp;#039;s Love&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/lets-love/NrF9-Vkuiu4_&quot;
+      },
+      &quot;year&quot;: &quot;2020&quot;,
+      &quot;releaseDate&quot;: &quot;2020-09-11&quot;,
+      &quot;duration&quot;: &quot;200&quot;,
+      &quot;label&quot;: &quot;Parlophone (France)&quot;,
+      &quot;primaryArtists&quot;: &quot;David Guetta, Sia&quot;,
+      &quot;primaryArtistsId&quot;: &quot;568665, 568707&quot;,
+      &quot;featuredArtists&quot;: &quot;&quot;,
+      &quot;featuredArtistsId&quot;: &quot;&quot;,
+      &quot;explicitContent&quot;: 0,
+      &quot;playCount&quot;: 682724,
+      &quot;language&quot;: &quot;english&quot;,
+      &quot;hasLyrics&quot;: &quot;false&quot;,
+      &quot;url&quot;: &quot;https://www.jiosaavn.com/song/lets-love/LwQzAyMCVmw&quot;,
+      &quot;copyright&quot;: &quot;Under Exclusive Licence to Warner Music France, Label Parlophone, ℗ 2020 What A Producer Ltd&quot;,
+      &quot;image&quot;: [
+        {
+          &quot;quality&quot;: &quot;50x50&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/000/Let-s-Love-English-2020-20200907113205-50x50.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;150x150&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/000/Let-s-Love-English-2020-20200907113205-150x150.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;500x500&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/000/Let-s-Love-English-2020-20200907113205-500x500.jpg&quot;
+        }
+      ],
+      &quot;downloadUrl&quot;: [
+        {
+          &quot;quality&quot;: &quot;12kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/000/779f6ded896bacae3c5fec13c4b8ac02_12.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;48kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/000/779f6ded896bacae3c5fec13c4b8ac02_48.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;96kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/000/779f6ded896bacae3c5fec13c4b8ac02_96.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;160kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/000/779f6ded896bacae3c5fec13c4b8ac02_160.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;320kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/000/779f6ded896bacae3c5fec13c4b8ac02_320.mp4&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;t5e4VTsk&quot;,
+      &quot;name&quot;: &quot;Unstoppable&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;album&quot;: {
+        &quot;id&quot;: &quot;1759517&quot;,
+        &quot;name&quot;: &quot;Unstoppable&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/unstoppable/1Tm2aGl16CM_&quot;
+      },
+      &quot;year&quot;: &quot;2016&quot;,
+      &quot;releaseDate&quot;: &quot;2016-01-21&quot;,
+      &quot;duration&quot;: &quot;218&quot;,
+      &quot;label&quot;: &quot;Monkey Puzzle Records/RCA Records&quot;,
+      &quot;primaryArtists&quot;: &quot;Sia&quot;,
+      &quot;primaryArtistsId&quot;: &quot;568707&quot;,
+      &quot;featuredArtists&quot;: &quot;&quot;,
+      &quot;featuredArtistsId&quot;: &quot;&quot;,
+      &quot;explicitContent&quot;: 0,
+      &quot;playCount&quot;: 22079909,
+      &quot;language&quot;: &quot;english&quot;,
+      &quot;hasLyrics&quot;: &quot;false&quot;,
+      &quot;url&quot;: &quot;https://www.jiosaavn.com/song/unstoppable/BF0OBSJkRFg&quot;,
+      &quot;copyright&quot;: &quot;(P) 2015 Monkey Puzzle Records, under exclusive license to RCA Records&quot;,
+      &quot;image&quot;: [
+        {
+          &quot;quality&quot;: &quot;50x50&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/552/Unstoppable-English-2016-50x50.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;150x150&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/552/Unstoppable-English-2016-150x150.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;500x500&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/552/Unstoppable-English-2016-500x500.jpg&quot;
+        }
+      ],
+      &quot;downloadUrl&quot;: [
+        {
+          &quot;quality&quot;: &quot;12kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/552/26b33054461788c6282e4ac814d3769f_12.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;48kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/552/26b33054461788c6282e4ac814d3769f_48.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;96kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/552/26b33054461788c6282e4ac814d3769f_96.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;160kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/552/26b33054461788c6282e4ac814d3769f_160.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;320kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/552/26b33054461788c6282e4ac814d3769f_320.mp4&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;iquFMDg0&quot;,
+      &quot;name&quot;: &quot;Crying in the Club&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;album&quot;: {
+        &quot;id&quot;: &quot;10845250&quot;,
+        &quot;name&quot;: &quot;Crying in the Club&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/crying-in-the-club/6j0IUL4,nPY_&quot;
+      },
+      &quot;year&quot;: &quot;2017&quot;,
+      &quot;releaseDate&quot;: &quot;2017-05-19&quot;,
+      &quot;duration&quot;: &quot;216&quot;,
+      &quot;label&quot;: &quot;Syco Music/Epic&quot;,
+      &quot;primaryArtists&quot;: &quot;Camila Cabello&quot;,
+      &quot;primaryArtistsId&quot;: &quot;1342580&quot;,
+      &quot;featuredArtists&quot;: &quot;&quot;,
+      &quot;featuredArtistsId&quot;: &quot;&quot;,
+      &quot;explicitContent&quot;: 0,
+      &quot;playCount&quot;: 5979934,
+      &quot;language&quot;: &quot;english&quot;,
+      &quot;hasLyrics&quot;: &quot;false&quot;,
+      &quot;url&quot;: &quot;https://www.jiosaavn.com/song/crying-in-the-club/GRkedzl0UAM&quot;,
+      &quot;copyright&quot;: &quot;(P) 2017 Simco Ltd. under exclusive license to Epic Records, a division of Sony Music Entertainment&quot;,
+      &quot;image&quot;: [
+        {
+          &quot;quality&quot;: &quot;50x50&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/209/Crying-in-the-Club-English-2017-50x50.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;150x150&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/209/Crying-in-the-Club-English-2017-150x150.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;500x500&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/209/Crying-in-the-Club-English-2017-500x500.jpg&quot;
+        }
+      ],
+      &quot;downloadUrl&quot;: [
+        {
+          &quot;quality&quot;: &quot;12kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/209/6c76948de974d9dddaef8bfca9418148_12.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;48kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/209/6c76948de974d9dddaef8bfca9418148_48.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;96kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/209/6c76948de974d9dddaef8bfca9418148_96.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;160kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/209/6c76948de974d9dddaef8bfca9418148_160.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;320kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/209/6c76948de974d9dddaef8bfca9418148_320.mp4&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;vU96z8LR&quot;,
+      &quot;name&quot;: &quot;Floating Through Space&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;album&quot;: {
+        &quot;id&quot;: &quot;25126009&quot;,
+        &quot;name&quot;: &quot;Floating Through Space&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/floating-through-space/tJ88-kjlNk8_&quot;
+      },
+      &quot;year&quot;: &quot;2021&quot;,
+      &quot;releaseDate&quot;: &quot;2021-02-04&quot;,
+      &quot;duration&quot;: &quot;177&quot;,
+      &quot;label&quot;: &quot;Monkey Puzzle/Atlantic&quot;,
+      &quot;primaryArtists&quot;: &quot;Sia, David Guetta&quot;,
+      &quot;primaryArtistsId&quot;: &quot;568707, 568665&quot;,
+      &quot;featuredArtists&quot;: &quot;&quot;,
+      &quot;featuredArtistsId&quot;: &quot;&quot;,
+      &quot;explicitContent&quot;: 0,
+      &quot;playCount&quot;: 407356,
+      &quot;language&quot;: &quot;english&quot;,
+      &quot;hasLyrics&quot;: &quot;false&quot;,
+      &quot;url&quot;: &quot;https://www.jiosaavn.com/song/floating-through-space/Bj1SBw4Ie2E&quot;,
+      &quot;copyright&quot;: &quot;under exclusive license to Atlantic Recording Corporation for the United States and WEA International for the world outside of the United States., ℗ 2021 Monkey Puzzle Music, Inc.&quot;,
+      &quot;image&quot;: [
+        {
+          &quot;quality&quot;: &quot;50x50&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/504/Floating-Through-Space-English-2021-20210203054031-50x50.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;150x150&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/504/Floating-Through-Space-English-2021-20210203054031-150x150.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;500x500&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/504/Floating-Through-Space-English-2021-20210203054031-500x500.jpg&quot;
+        }
+      ],
+      &quot;downloadUrl&quot;: [
+        {
+          &quot;quality&quot;: &quot;12kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/504/52e5c9b578f86252bc60b36d0f25536f_12.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;48kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/504/52e5c9b578f86252bc60b36d0f25536f_48.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;96kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/504/52e5c9b578f86252bc60b36d0f25536f_96.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;160kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/504/52e5c9b578f86252bc60b36d0f25536f_160.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;320kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/504/52e5c9b578f86252bc60b36d0f25536f_320.mp4&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;n2PC-t5G&quot;,
+      &quot;name&quot;: &quot;Snowman&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;album&quot;: {
+        &quot;id&quot;: &quot;16226559&quot;,
+        &quot;name&quot;: &quot;Snowman&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/snowman/Hv8ASgjBPA4_&quot;
+      },
+      &quot;year&quot;: &quot;2017&quot;,
+      &quot;releaseDate&quot;: &quot;2017-11-11&quot;,
+      &quot;duration&quot;: &quot;165&quot;,
+      &quot;label&quot;: &quot;Monkey Puzzle/Atlantic&quot;,
+      &quot;primaryArtists&quot;: &quot;Sia&quot;,
+      &quot;primaryArtistsId&quot;: &quot;568707&quot;,
+      &quot;featuredArtists&quot;: &quot;&quot;,
+      &quot;featuredArtistsId&quot;: &quot;&quot;,
+      &quot;explicitContent&quot;: 0,
+      &quot;playCount&quot;: 540438,
+      &quot;language&quot;: &quot;english&quot;,
+      &quot;hasLyrics&quot;: &quot;false&quot;,
+      &quot;url&quot;: &quot;https://www.jiosaavn.com/song/snowman/Hlo7cllEAnQ&quot;,
+      &quot;copyright&quot;: &quot;℗ 2017 Monkey Puzzle Music, Inc., under exclusive license to Atlantic Recording Corporation for the United States and WEA International for the world outside of the United States.&quot;,
+      &quot;image&quot;: [
+        {
+          &quot;quality&quot;: &quot;50x50&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/912/Snowman-English-2017-20221102174604-50x50.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;150x150&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/912/Snowman-English-2017-20221102174604-150x150.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;500x500&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/912/Snowman-English-2017-20221102174604-500x500.jpg&quot;
+        }
+      ],
+      &quot;downloadUrl&quot;: [
+        {
+          &quot;quality&quot;: &quot;12kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/912/579a097a2ab366f62eec9c374de9cf8f_12.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;48kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/912/579a097a2ab366f62eec9c374de9cf8f_48.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;96kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/912/579a097a2ab366f62eec9c374de9cf8f_96.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;160kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/912/579a097a2ab366f62eec9c374de9cf8f_160.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;320kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/912/579a097a2ab366f62eec9c374de9cf8f_320.mp4&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;U2J3f8O9&quot;,
+      &quot;name&quot;: &quot;Unstoppable&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;album&quot;: {
+        &quot;id&quot;: &quot;1759503&quot;,
+        &quot;name&quot;: &quot;This Is Acting&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/this-is-acting/WvjkPt-7qiM_&quot;
+      },
+      &quot;year&quot;: &quot;2016&quot;,
+      &quot;releaseDate&quot;: &quot;2016-01-29&quot;,
+      &quot;duration&quot;: &quot;218&quot;,
+      &quot;label&quot;: &quot;Monkey Puzzle Records/RCA Records&quot;,
+      &quot;primaryArtists&quot;: &quot;Sia&quot;,
+      &quot;primaryArtistsId&quot;: &quot;568707&quot;,
+      &quot;featuredArtists&quot;: &quot;&quot;,
+      &quot;featuredArtistsId&quot;: &quot;&quot;,
+      &quot;explicitContent&quot;: 0,
+      &quot;playCount&quot;: 22073044,
+      &quot;language&quot;: &quot;english&quot;,
+      &quot;hasLyrics&quot;: &quot;false&quot;,
+      &quot;url&quot;: &quot;https://www.jiosaavn.com/song/unstoppable/JVohAhIIeAo&quot;,
+      &quot;copyright&quot;: &quot;(P) 2015 Monkey Puzzle Records, under exclusive license to RCA Records&quot;,
+      &quot;image&quot;: [
+        {
+          &quot;quality&quot;: &quot;50x50&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/203/This-Is-Acting-English-2016-50x50.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;150x150&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/203/This-Is-Acting-English-2016-150x150.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;500x500&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/203/This-Is-Acting-English-2016-500x500.jpg&quot;
+        }
+      ],
+      &quot;downloadUrl&quot;: [
+        {
+          &quot;quality&quot;: &quot;12kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/203/af8d67ab7f66ecc23e6588e080bf2df0_12.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;48kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/203/af8d67ab7f66ecc23e6588e080bf2df0_48.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;96kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/203/af8d67ab7f66ecc23e6588e080bf2df0_96.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;160kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/203/af8d67ab7f66ecc23e6588e080bf2df0_160.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;320kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/203/af8d67ab7f66ecc23e6588e080bf2df0_320.mp4&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;hkftnbSX&quot;,
+      &quot;name&quot;: &quot;Dynamite&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;album&quot;: {
+        &quot;id&quot;: &quot;30406389&quot;,
+        &quot;name&quot;: &quot;Dynamite&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/dynamite/wuz-emDEzaQ_&quot;
+      },
+      &quot;year&quot;: &quot;2021&quot;,
+      &quot;releaseDate&quot;: &quot;2021-10-22&quot;,
+      &quot;duration&quot;: &quot;213&quot;,
+      &quot;label&quot;: &quot;Universal-Island Records Ltd.&quot;,
+      &quot;primaryArtists&quot;: &quot;Sean Paul&quot;,
+      &quot;primaryArtistsId&quot;: &quot;468845&quot;,
+      &quot;featuredArtists&quot;: &quot;Sia&quot;,
+      &quot;featuredArtistsId&quot;: &quot;568707&quot;,
+      &quot;explicitContent&quot;: 0,
+      &quot;playCount&quot;: 146228,
+      &quot;language&quot;: &quot;english&quot;,
+      &quot;hasLyrics&quot;: &quot;true&quot;,
+      &quot;url&quot;: &quot;https://www.jiosaavn.com/song/dynamite/GAMNRRpSZGs&quot;,
+      &quot;copyright&quot;: &quot;℗ 2021 SPJ Productions Ltd, under exclusive licence to Island Records, a division of Universal Music Operations Limited&quot;,
+      &quot;image&quot;: [
+        {
+          &quot;quality&quot;: &quot;50x50&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/313/Dynamite-English-2021-20211022063616-50x50.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;150x150&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/313/Dynamite-English-2021-20211022063616-150x150.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;500x500&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/313/Dynamite-English-2021-20211022063616-500x500.jpg&quot;
+        }
+      ],
+      &quot;downloadUrl&quot;: [
+        {
+          &quot;quality&quot;: &quot;12kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/313/4038614309288f4059582447fc13117f_12.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;48kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/313/4038614309288f4059582447fc13117f_48.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;96kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/313/4038614309288f4059582447fc13117f_96.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;160kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/313/4038614309288f4059582447fc13117f_160.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;320kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/313/4038614309288f4059582447fc13117f_320.mp4&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;URuxt8q-&quot;,
+      &quot;name&quot;: &quot;The Greatest&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;album&quot;: {
+        &quot;id&quot;: &quot;2786558&quot;,
+        &quot;name&quot;: &quot;This Is Acting (Deluxe Version)&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/this-is-acting-deluxe-version/vmjUuWv7xeY_&quot;
+      },
+      &quot;year&quot;: &quot;2016&quot;,
+      &quot;releaseDate&quot;: &quot;2016-10-21&quot;,
+      &quot;duration&quot;: &quot;210&quot;,
+      &quot;label&quot;: &quot;Monkey Puzzle Records/RCA Records&quot;,
+      &quot;primaryArtists&quot;: &quot;Sia&quot;,
+      &quot;primaryArtistsId&quot;: &quot;568707&quot;,
+      &quot;featuredArtists&quot;: &quot;Kendrick Lamar&quot;,
+      &quot;featuredArtistsId&quot;: &quot;612060&quot;,
+      &quot;explicitContent&quot;: 0,
+      &quot;playCount&quot;: 4364221,
+      &quot;language&quot;: &quot;english&quot;,
+      &quot;hasLyrics&quot;: &quot;false&quot;,
+      &quot;url&quot;: &quot;https://www.jiosaavn.com/song/the-greatest/JToeSQAIRh4&quot;,
+      &quot;copyright&quot;: &quot;(P) 2016 Monkey Puzzle Records, under exclusive license to RCA Records&quot;,
+      &quot;image&quot;: [
+        {
+          &quot;quality&quot;: &quot;50x50&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/832/This-Is-Acting-Deluxe-Version-English-2016-50x50.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;150x150&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/832/This-Is-Acting-Deluxe-Version-English-2016-150x150.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;500x500&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/832/This-Is-Acting-Deluxe-Version-English-2016-500x500.jpg&quot;
+        }
+      ],
+      &quot;downloadUrl&quot;: [
+        {
+          &quot;quality&quot;: &quot;12kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/832/54f46d195029b2756f567bf9976e71dc_12.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;48kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/832/54f46d195029b2756f567bf9976e71dc_48.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;96kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/832/54f46d195029b2756f567bf9976e71dc_96.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;160kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/832/54f46d195029b2756f567bf9976e71dc_160.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;320kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/832/54f46d195029b2756f567bf9976e71dc_320.mp4&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;5WXAlMNt&quot;,
+      &quot;name&quot;: &quot;Thunderclouds&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;album&quot;: {
+        &quot;id&quot;: &quot;13615087&quot;,
+        &quot;name&quot;: &quot;Thunderclouds&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/thunderclouds/tq0W-ibW-dg_&quot;
+      },
+      &quot;year&quot;: &quot;2018&quot;,
+      &quot;releaseDate&quot;: &quot;2018-08-09&quot;,
+      &quot;duration&quot;: &quot;187&quot;,
+      &quot;label&quot;: &quot;Records/Columbia&quot;,
+      &quot;primaryArtists&quot;: &quot;Lsd&quot;,
+      &quot;primaryArtistsId&quot;: &quot;1153577&quot;,
+      &quot;featuredArtists&quot;: &quot;Sia, Diplo, Labrinth, Sia, Diplo, And Labrinth&quot;,
+      &quot;featuredArtistsId&quot;: &quot;568707, 599061, 577223, 4799650&quot;,
+      &quot;explicitContent&quot;: 0,
+      &quot;playCount&quot;: 8828399,
+      &quot;language&quot;: &quot;english&quot;,
+      &quot;hasLyrics&quot;: &quot;false&quot;,
+      &quot;url&quot;: &quot;https://www.jiosaavn.com/song/thunderclouds/RT8zcBh9eUc&quot;,
+      &quot;copyright&quot;: &quot;(P) 2018 RECORDS, LLC / Columbia&quot;,
+      &quot;image&quot;: [
+        {
+          &quot;quality&quot;: &quot;50x50&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/679/Thunderclouds-English-2018-20180809032729-50x50.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;150x150&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/679/Thunderclouds-English-2018-20180809032729-150x150.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;500x500&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/679/Thunderclouds-English-2018-20180809032729-500x500.jpg&quot;
+        }
+      ],
+      &quot;downloadUrl&quot;: [
+        {
+          &quot;quality&quot;: &quot;12kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/679/b0b7a063d3efddf3a771a0dc91b30d69_12.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;48kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/679/b0b7a063d3efddf3a771a0dc91b30d69_48.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;96kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/679/b0b7a063d3efddf3a771a0dc91b30d69_96.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;160kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/679/b0b7a063d3efddf3a771a0dc91b30d69_160.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;320kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/679/b0b7a063d3efddf3a771a0dc91b30d69_320.mp4&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;iWt8op78&quot;,
+      &quot;name&quot;: &quot;Cheap Thrills&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;album&quot;: {
+        &quot;id&quot;: &quot;1759503&quot;,
+        &quot;name&quot;: &quot;This Is Acting&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/this-is-acting/WvjkPt-7qiM_&quot;
+      },
+      &quot;year&quot;: &quot;2016&quot;,
+      &quot;releaseDate&quot;: &quot;2016-01-29&quot;,
+      &quot;duration&quot;: &quot;210&quot;,
+      &quot;label&quot;: &quot;Monkey Puzzle Records/RCA Records&quot;,
+      &quot;primaryArtists&quot;: &quot;Sia&quot;,
+      &quot;primaryArtistsId&quot;: &quot;568707&quot;,
+      &quot;featuredArtists&quot;: &quot;&quot;,
+      &quot;featuredArtistsId&quot;: &quot;&quot;,
+      &quot;explicitContent&quot;: 0,
+      &quot;playCount&quot;: 97187000,
+      &quot;language&quot;: &quot;english&quot;,
+      &quot;hasLyrics&quot;: &quot;false&quot;,
+      &quot;url&quot;: &quot;https://www.jiosaavn.com/song/cheap-thrills/GT8fCRtAAAs&quot;,
+      &quot;copyright&quot;: &quot;(P) 2015 Monkey Puzzle Records, under exclusive license to RCA Records&quot;,
+      &quot;image&quot;: [
+        {
+          &quot;quality&quot;: &quot;50x50&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/203/This-Is-Acting-English-2016-50x50.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;150x150&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/203/This-Is-Acting-English-2016-150x150.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;500x500&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/203/This-Is-Acting-English-2016-500x500.jpg&quot;
+        }
+      ],
+      &quot;downloadUrl&quot;: [
+        {
+          &quot;quality&quot;: &quot;12kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/203/311467c464828dfc1552b27c47c50577_12.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;48kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/203/311467c464828dfc1552b27c47c50577_48.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;96kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/203/311467c464828dfc1552b27c47c50577_96.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;160kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/203/311467c464828dfc1552b27c47c50577_160.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;320kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/203/311467c464828dfc1552b27c47c50577_320.mp4&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;wGWwbFVX&quot;,
+      &quot;name&quot;: &quot;Courage to Change&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;album&quot;: {
+        &quot;id&quot;: &quot;22703343&quot;,
+        &quot;name&quot;: &quot;Courage to Change&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/courage-to-change/9ePIgBpmNqo_&quot;
+      },
+      &quot;year&quot;: &quot;2020&quot;,
+      &quot;releaseDate&quot;: &quot;2020-09-24&quot;,
+      &quot;duration&quot;: &quot;292&quot;,
+      &quot;label&quot;: &quot;Atlantic Records&quot;,
+      &quot;primaryArtists&quot;: &quot;Sia&quot;,
+      &quot;primaryArtistsId&quot;: &quot;568707&quot;,
+      &quot;featuredArtists&quot;: &quot;&quot;,
+      &quot;featuredArtistsId&quot;: &quot;&quot;,
+      &quot;explicitContent&quot;: 0,
+      &quot;playCount&quot;: 155237,
+      &quot;language&quot;: &quot;english&quot;,
+      &quot;hasLyrics&quot;: &quot;true&quot;,
+      &quot;url&quot;: &quot;https://www.jiosaavn.com/song/courage-to-change/By88RhZ2YWs&quot;,
+      &quot;copyright&quot;: &quot;under exclusive license to Atlantic Recording Corporation for the United States and WEA International for the world outside of the United States., ℗ 2020 Monkey Puzzle Music, Inc.&quot;,
+      &quot;image&quot;: [
+        {
+          &quot;quality&quot;: &quot;50x50&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/760/Courage-to-Change-English-2020-20210116043159-50x50.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;150x150&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/760/Courage-to-Change-English-2020-20210116043159-150x150.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;500x500&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/760/Courage-to-Change-English-2020-20210116043159-500x500.jpg&quot;
+        }
+      ],
+      &quot;downloadUrl&quot;: [
+        {
+          &quot;quality&quot;: &quot;12kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/760/a12d5f509af193baee11f859ec61c321_12.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;48kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/760/a12d5f509af193baee11f859ec61c321_48.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;96kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/760/a12d5f509af193baee11f859ec61c321_96.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;160kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/760/a12d5f509af193baee11f859ec61c321_160.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;320kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/760/a12d5f509af193baee11f859ec61c321_320.mp4&quot;
+        }
+      ]
+    },
+    {
+      &quot;id&quot;: &quot;qnFPUVVn&quot;,
+      &quot;name&quot;: &quot;Never Give Up&quot;,
+      &quot;type&quot;: &quot;&quot;,
+      &quot;album&quot;: {
+        &quot;id&quot;: &quot;3031864&quot;,
+        &quot;name&quot;: &quot;Never Give Up (From &amp;quot;Lion&amp;quot; Soundtrack)&quot;,
+        &quot;url&quot;: &quot;https://www.jiosaavn.com/album/never-give-up-from-lion-soundtrack/Ls,mAR4z-D4_&quot;
+      },
+      &quot;year&quot;: &quot;2016&quot;,
+      &quot;releaseDate&quot;: &quot;2016-11-18&quot;,
+      &quot;duration&quot;: &quot;222&quot;,
+      &quot;label&quot;: &quot;Masterworks&quot;,
+      &quot;primaryArtists&quot;: &quot;Sia&quot;,
+      &quot;primaryArtistsId&quot;: &quot;568707&quot;,
+      &quot;featuredArtists&quot;: &quot;&quot;,
+      &quot;featuredArtistsId&quot;: &quot;&quot;,
+      &quot;explicitContent&quot;: 0,
+      &quot;playCount&quot;: 3575066,
+      &quot;language&quot;: &quot;english&quot;,
+      &quot;hasLyrics&quot;: &quot;false&quot;,
+      &quot;url&quot;: &quot;https://www.jiosaavn.com/song/never-give-up/AQYtYSFmYV0&quot;,
+      &quot;copyright&quot;: &quot;(P) 2016 Monkey Puzzle Records Inc.&quot;,
+      &quot;image&quot;: [
+        {
+          &quot;quality&quot;: &quot;50x50&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/659/Never-Give-Up-From-Lion-Soundtrack-English-2016-50x50.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;150x150&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/659/Never-Give-Up-From-Lion-Soundtrack-English-2016-150x150.jpg&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;500x500&quot;,
+          &quot;link&quot;: &quot;https://c.saavncdn.com/659/Never-Give-Up-From-Lion-Soundtrack-English-2016-500x500.jpg&quot;
+        }
+      ],
+      &quot;downloadUrl&quot;: [
+        {
+          &quot;quality&quot;: &quot;12kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/659/490c1c31394d96c9b1c2fd7ace8f54d1_12.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;48kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/659/490c1c31394d96c9b1c2fd7ace8f54d1_48.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;96kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/659/490c1c31394d96c9b1c2fd7ace8f54d1_96.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;160kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/659/490c1c31394d96c9b1c2fd7ace8f54d1_160.mp4&quot;
+        },
+        {
+          &quot;quality&quot;: &quot;320kbps&quot;,
+          &quot;link&quot;: &quot;https://aac.saavncdn.com/659/490c1c31394d96c9b1c2fd7ace8f54d1_320.mp4&quot;
+        }
+      ]
+    }
+  ]
+}</code></pre>
+</doc-codeblock></div>
+</doc-tab>
+</doc-tabs>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Route Paramter</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-white dark:text-dark-850 bg-gray-900 dark:bg-white h-6 px-2 text-xs rounded-md">
+    <span>id</span>
+</span></td>
+<td>Artist ID</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>True</span>
+</span></td>
+</tr>
+<tr>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-white dark:text-dark-850 bg-gray-900 dark:bg-white h-6 px-2 text-xs rounded-md">
+    <span>id</span>
+</span></td>
+<td>Song ID</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>True</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Query Paramter</th>
+<th>Description</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-white dark:text-dark-850 bg-gray-900 dark:bg-white h-6 px-2 text-xs rounded-md">
+    <span>language</span>
+</span></td>
+<td>Songs language</td>
+<td><span class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-blue-600 bg-blue-100 h-6 px-2 text-xs rounded-md">
+    <span>False</span>
+</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+                                
+                                <!-- Required only on API pages -->
+                                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
+                            </div>
+                            <footer id="retype-content-footer" class="clear-both">
+                            
+                                <nav id="retype-nextprev" class="print:hidden flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../details/albums/">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
+                                                <span class="block mt-1">Album Details</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../details/playlists/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">Playlist Details</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </footer>
+                        </main>
+                
+                        <div id="retype-page-footer" class="print:border-none border-t dark:border-dark-650 pt-6 mb-8">
+                            <footer class="flex flex-wrap items-center justify-between print:justify-center">
+                                <div id="retype-footer-links" class="print:hidden">
+                                    <ul class="flex flex-wrap items-center text-sm">
+                                    </ul>
+                                </div>
+                                <div id="retype-copyright" class="print:justify-center docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2025. All rights reserved.</p></div>
+                            </footer>
+                        </div>
+                    </div>
+                
+                    <!-- Rendered if sidebar right is enabled -->
+                    <!-- Sidebar right skeleton-->
+                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-white border-gray-200 lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton dark:bg-dark-850 dark:border-dark-650">
+                        <div class="pl-5">
+                            <div class="w-32 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-48 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                            <div class="w-40 h-3 mb-4 bg-gray-200 dark:bg-dark-600 rounded-full loading"></div>
+                        </div>
+                    </div>
+                
+                    <!-- User should be able to hide sidebar right -->
+                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                </div>
+
+            </div>
+        </div>
+    
+        <doc-search-mobile></doc-search-mobile>
+        <doc-back-to-top></doc-back-to-top>
+    </div>
+
+
+    <div id="retype-overlay-target"></div>
+
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Artist Details", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+</body>
+</html>
